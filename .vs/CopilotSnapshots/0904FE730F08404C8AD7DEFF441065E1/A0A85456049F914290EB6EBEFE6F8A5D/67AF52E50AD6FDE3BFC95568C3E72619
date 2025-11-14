@@ -1,0 +1,45 @@
+﻿package com.example.Sheep.domain.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+import com.ecomerce.producto.domain.exception.DomainValidationException;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class Usuario {
+ // Identificador �nico del usuario
+ private Long idUsuario;
+ private String nombreCompleto;
+ private String correo;
+ private String telefono;
+ // Roles v�lidos: "PRODUCTOR", "VETERINARIO", "ADMINISTRADOR"
+ private String rol;
+ private String passwordHash;
+ private LocalDate fechaRegistro;
+ private Boolean activo;
+
+ public void validate() {
+ if (nombreCompleto == null || nombreCompleto.isBlank()) {
+ throw new DomainValidationException("Nombre completo es requerido");
+ }
+ if (correo == null || correo.isBlank() || !correo.contains("@")) {
+ throw new DomainValidationException("Correo v�lido es requerido");
+ }
+ if (rol == null || rol.isBlank()) {
+ throw new DomainValidationException("Rol es requerido");
+ }
+ if (passwordHash == null || passwordHash.isBlank()) {
+ throw new DomainValidationException("PasswordHash es requerido");
+ }
+ if (activo == null) {
+ throw new DomainValidationException("Campo activo es requerido");
+ }
+ }
+}

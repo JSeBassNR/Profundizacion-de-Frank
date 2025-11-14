@@ -1,0 +1,61 @@
+﻿package com.example.Sheep.infraestructure.entry_points;
+
+import com.ecomerce.producto.domain.model.Oveja;
+import com.ecomerce.producto.domain.usecase.OvejaUseCase;
+import com.ecomerce.producto.infraestructure.driver_adapters.jpa_repository.OvejaData;
+import com.ecomerce.producto.infraestructure.mapper.OvejaMapper;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/oveja")
+@RequiredArgsConstructor
+public class OvejaController {
+ private final OvejaUseCase useCase;
+ private final OvejaMapper mapper;
+
+ @PostMapping("/save")
+ public ResponseEntity<Oveja> save(@RequestBody OvejaData request){
+ var saved = useCase.guardar(mapper.toDomain(request));
+ return ResponseEntity.ok(saved);
+ }
+ @GetMapping("/{id}")
+ public ResponseEntity<Oveja> findById(@PathVariable Long id){
+ var o = useCase.buscarPorId(id);
+ return o!=null? ResponseEntity.ok(o): ResponseEntity.notFound().build();
+ }
+ @PutMapping("/update")
+ public ResponseEntity<Oveja> update(@RequestBody OvejaData request){
+ try{
+ var updated = useCase.actualizar(mapper.toDomain(request));
+ return ResponseEntity.ok(updated);
+ }catch(Exception e){
+ return ResponseEntity.badRequest().build();
+ }
+ }
+ @DeleteMapping("/delete/{id}")
+ public ResponseEntity<Void> delete(@PathVariable Long id){
+ try{
+ useCase.eliminar(id);
+ return ResponseEntity.ok().build();
+ }catch(Exception e){
+ return ResponseEntity.notFound().build();
+ }
+ }
+ @GetMapping("/buscar-identificacion/{identificacion}")
+ public ResponseEntity<Oveja> findByIdentificador(@PathVariable String identificacion){
+ var o = useCase.buscarPorIdentificacion(identificacion);
+ return o!=null? ResponseEntity.ok(o): ResponseEntity.notFound().build();
+ }
+ @GetMapping("/all")
+ public ResponseEntity<Page<Oveja>> findAllPaged(@RequestParam(defaultValue="0") int page,
+ @RequestParam(defaultValue="10") int size){
+ var ovejas = useCase.obtenerPaginado(PageRequest.of(page, size));
+ if(ovejas.hasContent()) return ResponseEntity.ok(ovejas);
+ return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ }
+}

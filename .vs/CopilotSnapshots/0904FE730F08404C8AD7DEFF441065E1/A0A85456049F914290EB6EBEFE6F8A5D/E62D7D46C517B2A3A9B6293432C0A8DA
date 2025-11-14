@@ -1,0 +1,48 @@
+﻿package com.example.Sheep.domain.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+import com.ecomerce.producto.domain.exception.DomainValidationException;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class Oveja {
+ // Identificador �nico interno
+ private Long idOveja;
+ // C�digo o chapa de la oveja (�nico en el corral)
+ private String identificacion;
+ // Nombre opcional para la oveja
+ private String nombre;
+ private String raza;
+ private Integer edadMeses;
+ // Sexo: "M" o "H"
+ private String sexo;
+ // Estado de salud: "Sana", "En Riesgo", "Enferma"
+ private String estadoSalud;
+ private LocalDate fechaRegistro;
+ // Relaci�n ManyToOne con el propietario (solo id si no hay persistencia)
+ private Usuario propietario;
+
+ // Reglas de negocio b�sicas
+ public void validate() {
+ if (identificacion == null || identificacion.isBlank()) {
+ throw new DomainValidationException("Identificaci�n de la oveja es requerida");
+ }
+ if (edadMeses != null && edadMeses <0) {
+ throw new DomainValidationException("Edad en meses no puede ser negativa");
+ }
+ if (sexo != null && !(sexo.equals("M") || sexo.equals("H"))) {
+ throw new DomainValidationException("Sexo debe ser 'M' o 'H'");
+ }
+ if (estadoSalud != null && !(estadoSalud.equals("Sana") || estadoSalud.equals("En Riesgo") || estadoSalud.equals("Enferma"))) {
+ throw new DomainValidationException("Estado de salud inv�lido");
+ }
+ }
+}

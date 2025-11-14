@@ -1,0 +1,39 @@
+﻿package com.example.Sheep.infraestructure.mapper;
+
+import com.ecomerce.producto.domain.model.Oveja;
+import com.ecomerce.producto.domain.model.Usuario;
+import com.ecomerce.producto.infraestructure.driver_adapters.jpa_repository.OvejaData;
+import org.springframework.stereotype.Component;
+
+@Component
+public class OvejaMapper {
+ public Oveja toDomain(OvejaData data){
+ if(data==null) return null;
+ Oveja o = new Oveja();
+ o.setIdOveja(data.getId());
+ o.setIdentificacion(data.getIdentificador());
+ // o.setNombre(null); // no mapeado en persistencia
+ o.setRaza(data.getRaza());
+ o.setEdadMeses(data.getEdadMeses());
+ // o.setSexo(null); // no mapeado en persistencia
+ o.setEstadoSalud(data.getEstadoSalud());
+ // o.setFechaRegistro(null); // no mapeado en persistencia
+ if(data.getGanaderoId()!=null){
+ Usuario propietario = new Usuario();
+ propietario.setIdUsuario(data.getGanaderoId());
+ o.setPropietario(propietario);
+ }
+ return o;
+ }
+ public OvejaData toData(Oveja domain){
+ if(domain==null) return null;
+ OvejaData d = new OvejaData();
+ d.setId(domain.getIdOveja());
+ d.setIdentificador(domain.getIdentificacion());
+ d.setRaza(domain.getRaza());
+ d.setEdadMeses(domain.getEdadMeses());
+ d.setEstadoSalud(domain.getEstadoSalud());
+ d.setGanaderoId(domain.getPropietario()!=null? domain.getPropietario().getIdUsuario(): null);
+ return d;
+ }
+}

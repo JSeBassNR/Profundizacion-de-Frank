@@ -1,0 +1,651 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\resources\\application.properties||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\resources\\application.properties||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\database\\ovinosalud_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\ovinosalud_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\database\\ovinosalud_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\ovinosalud_db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\pom.xml||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\pom.xml||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\SheepApplication.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\SheepApplication.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\DomainValidationException.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\DomainValidationException.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\NotFoundException.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\NotFoundException.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Usuario.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Usuario.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Oveja.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Oveja.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Imagen.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Imagen.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Reporte.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Reporte.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\UsuarioGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\UsuarioGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\OvejaGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\OvejaGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ImagenGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ImagenGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ReporteGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ReporteGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\UsuarioUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\UsuarioUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\OvejaUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\OvejaUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ImagenUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ImagenUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ReporteUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ReporteUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteData.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\mapper\\Mappers.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\mapper\\Mappers.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Usuario.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Usuario.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "OvejaData.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "ViewState": "AgIAACAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:57:32.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OvejaMapper.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "ViewState": "AgIAACMAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:57:19.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "OvejaUseCase.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "ViewState": "AgIAACYAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:57:02.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OvejaGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:56:50.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Usuario.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Usuario.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Usuario.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Usuario.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Usuario.java",
+              "ViewState": "AgIAACwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:56:09.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Oveja.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "ViewState": "AgIAACUAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:55:57.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "application.properties",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\resources\\application.properties",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\resources\\application.properties",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\resources\\application.properties",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\resources\\application.properties",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:46:51.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OvejaController.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "ViewState": "AgIAADwAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:58:24.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OvejaGatewayImpl.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "ViewState": "AgIAADUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:57:55.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "OvejaDataJpaRepository.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "ViewState": "AgIAAAcAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:57:40.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SheepApplication.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\SheepApplication.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\SheepApplication.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\SheepApplication.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\SheepApplication.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:46:56.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DomainValidationException.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\DomainValidationException.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\DomainValidationException.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\DomainValidationException.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\DomainValidationException.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:03.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotFoundException.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\NotFoundException.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\NotFoundException.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\NotFoundException.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\exception\\NotFoundException.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:08.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Usuario.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Usuario.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Usuario.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Usuario.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:18.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ovinosalud_db.sql ",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\database\\ovinosalud_db.sql",
+              "RelativeDocumentMoniker": "database\\ovinosalud_db.sql",
+              "ToolTip": "ovinosalud_db.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-11-13T02:40:52.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UsuarioGatewayImpl.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioGatewayImpl.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioGatewayImpl.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioGatewayImpl.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioGatewayImpl.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:52:15.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Mappers.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\mapper\\Mappers.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\mapper\\Mappers.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\mapper\\Mappers.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\mapper\\Mappers.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:52:04.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ReporteDataJpaRepository.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteDataJpaRepository.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteDataJpaRepository.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteDataJpaRepository.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteDataJpaRepository.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:51:17.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ImagenDataJpaRepository.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenDataJpaRepository.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenDataJpaRepository.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenDataJpaRepository.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenDataJpaRepository.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:51:09.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OvejaDataJpaRepository.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:51:03.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsuarioDataJpaRepository.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioDataJpaRepository.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioDataJpaRepository.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioDataJpaRepository.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioDataJpaRepository.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:50:54.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pom.xml",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\pom.xml",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\pom.xml",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\pom.xml",
+              "RelativeToolTip": "ovinosalud-backend\\pom.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-11-13T02:46:44.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReporteData.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteData.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteData.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteData.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ReporteData.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:50:42.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ImagenData.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenData.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenData.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenData.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\ImagenData.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:50:24.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OvejaData.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:50:06.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioData.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioData.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioData.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioData.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\infrastructure\\drive_adapters\\jpa_repository\\UsuarioData.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:49:49.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReporteUseCase.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ReporteUseCase.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ReporteUseCase.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ReporteUseCase.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ReporteUseCase.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:49:32.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ImagenUseCase.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ImagenUseCase.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ImagenUseCase.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ImagenUseCase.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\ImagenUseCase.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:49:21.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OvejaUseCase.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\OvejaUseCase.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\OvejaUseCase.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\OvejaUseCase.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\OvejaUseCase.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:49:10.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsuarioUseCase.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\UsuarioUseCase.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\UsuarioUseCase.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\UsuarioUseCase.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\usecase\\UsuarioUseCase.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:48:17.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReporteGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ReporteGateway.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ReporteGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ReporteGateway.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ReporteGateway.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:48:09.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ImagenGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ImagenGateway.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ImagenGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ImagenGateway.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\ImagenGateway.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:48:04.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OvejaGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\OvejaGateway.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\OvejaGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\OvejaGateway.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\OvejaGateway.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:59.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\UsuarioGateway.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\UsuarioGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\UsuarioGateway.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\gateway\\UsuarioGateway.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:52.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Reporte.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Reporte.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Reporte.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Reporte.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Reporte.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:45.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Imagen.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Imagen.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Imagen.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Imagen.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Imagen.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:37.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Oveja.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Oveja.java",
+              "RelativeDocumentMoniker": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Oveja.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Oveja.java",
+              "RelativeToolTip": "ovinosalud-backend\\src\\main\\java\\com\\example\\ovinosalud\\domain\\model\\Oveja.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-13T02:47:29.324Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
