@@ -2,8 +2,17 @@ package com.example.sheep.infraestructure.mapper;
 
 import com.example.sheep.domain.model.Ganadero;
 import com.example.sheep.infraestructure.driver_adapters.jpa_repository.GanaderoData;
+import com.example.sheep.infraestructura.dto.GanaderoRequest;
+import com.example.sheep.infraestructura.dto.GanaderoResponse;
+import com.example.sheep.infraestructura.dto.GanaderoUpdateRequest;
 import org.springframework.stereotype.Component;
 
+/**
+ * Mapper entre capas:
+ * - Persistencia (GanaderoData)
+ * - Dominio (Ganadero)
+ * - DTOs (Request/Response)
+ */
 @Component
 public class GanaderoMapper {
  public Ganadero toDomain(GanaderoData data){
@@ -25,5 +34,38 @@ public class GanaderoMapper {
  d.setTelefono(domain.getTelefono());
  d.setUbicacion(domain.getUbicacion());
  return d;
+ }
+
+ // DTO -> Domain
+ public Ganadero toDomain(GanaderoRequest request){
+ if(request==null) return null;
+ Ganadero g = new Ganadero();
+ g.setNombre(request.getNombre());
+ g.setEmail(request.getEmail());
+ g.setTelefono(request.getTelefono());
+ g.setUbicacion(request.getUbicacion());
+ return g;
+ }
+ public Ganadero toDomain(GanaderoUpdateRequest request){
+ if(request==null) return null;
+ Ganadero g = new Ganadero();
+ g.setId(request.getId());
+ g.setNombre(request.getNombre());
+ g.setEmail(request.getEmail());
+ g.setTelefono(request.getTelefono());
+ g.setUbicacion(request.getUbicacion());
+ return g;
+ }
+
+ // Domain -> DTO
+ public GanaderoResponse toResponse(Ganadero domain){
+ if(domain==null) return null;
+ GanaderoResponse r = new GanaderoResponse();
+ r.setId(domain.getId());
+ r.setNombre(domain.getNombre());
+ r.setEmail(domain.getEmail());
+ r.setTelefono(domain.getTelefono());
+ r.setUbicacion(domain.getUbicacion());
+ return r;
  }
 }

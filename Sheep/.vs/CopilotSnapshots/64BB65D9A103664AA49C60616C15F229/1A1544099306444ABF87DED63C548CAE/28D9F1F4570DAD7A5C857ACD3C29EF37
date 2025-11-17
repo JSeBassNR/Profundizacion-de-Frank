@@ -1,0 +1,15 @@
+﻿package com.example.Sheep.infraestructure.entry_points.dto;
+
+import lombok.Data;
+
+@Data
+public class OvejaRequestDTO {
+ private String identificacion;
+ private String raza;
+ private Integer edad;
+ // TRUE hembra, FALSE macho
+ private Boolean sexo;
+ private String estadoSalud;
+ // id del propietario
+ private Long propietarioId;
+}

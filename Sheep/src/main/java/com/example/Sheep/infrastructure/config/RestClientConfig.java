@@ -1,0 +1,17 @@
+package com.example.Sheep.infrastructure.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestClient;
+
+/**
+ * Configuración de beans para clientes HTTP.
+ */
+@Configuration
+public class RestClientConfig {
+ @Bean
+ public RestClient restClient() {
+ // RestClient de Spring Framework6: simple y testeable
+ return RestClient.builder().build();
+ }
+}

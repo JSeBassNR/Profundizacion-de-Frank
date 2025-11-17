@@ -1,0 +1,40 @@
+﻿package com.example.Sheep.domain.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDateTime;
+
+import com.example.Sheep.domain.exception.DomainValidationException;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class Oveja {
+ // Identificador único interno
+ private Long idOveja;
+ // Código o chapa de la oveja (único en el corral)
+ private String identificacion;
+ private String raza;
+ private Integer edad; // en años
+ // Sexo: TRUE = hembra, FALSE = macho (según BD)
+ private Boolean sexo;
+ // Estado de salud: libre
+ private String estadoSalud;
+ private LocalDateTime fechaRegistro;
+ // Relación con el propietario (solo id si no hay persistencia)
+ private Usuario propietario;
+
+ // Reglas de negocio básicas
+ public void validate() {
+ if (identificacion == null || identificacion.isBlank()) {
+ throw new DomainValidationException("Identificación de la oveja es requerida");
+ }
+ if (edad != null && edad <0) {
+ throw new DomainValidationException("Edad no puede ser negativa");
+ }
+ }
+}

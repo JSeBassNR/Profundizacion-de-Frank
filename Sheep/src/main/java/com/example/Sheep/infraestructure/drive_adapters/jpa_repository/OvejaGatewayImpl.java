@@ -1,34 +1,46 @@
 package com.example.Sheep.infraestructure.drive_adapters.jpa_repository;
 
-import com.example.Sheep.domain.exception.DomainValidationException;
+import com.example.Sheep.domain.exception.IdentificacionDuplicadaException;
 import com.example.Sheep.domain.exception.OvejaNotFoundException;
 import com.example.Sheep.domain.model.Oveja;
 import com.example.Sheep.domain.model.gateway.OvejaGateway;
 import com.example.Sheep.infraestructure.mapper.OvejaMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
+/**
+ * Adaptador de salida (driver adapter) para la persistencia JPA de Oveja.
+ * Implementa el puerto de dominio {@link com.example.Sheep.domain.model.gateway.OvejaGateway}.
+ *
+ * Reglas implementadas aquí:
+ * - Protección contra duplicidad de identificación (por DB y chequeo previo).
+ */
 @Repository
 @RequiredArgsConstructor
 public class OvejaGatewayImpl implements OvejaGateway {
  private final OvejaDataJpaRepository repository;
- private final UsuarioDataJpaRepository usuarioRepository;
  private final OvejaMapper mapper;
 
  @Override
  public Oveja guardar(Oveja oveja){
+ // validar identificación duplicada de forma temprana
+ if (oveja.getIdentificacion() != null) {
+ OvejaData existente = repository.findByIdentificacion(oveja.getIdentificacion());
+ if (existente != null) {
+ throw new IdentificacionDuplicadaException(oveja.getIdentificacion());
+ }
+ }
  var data = mapper.toData(oveja);
- if (data.getPropietario() != null) {
- Long ownerId = data.getPropietario().getId();
- if (ownerId == null || !usuarioRepository.existsById(ownerId)) {
- throw new DomainValidationException("Propietario no existe");
- }
- data.setPropietario(usuarioRepository.getReferenceById(ownerId));
- }
+ try {
  var saved = repository.save(data);
  return mapper.toDomain(saved);
+ } catch (DataIntegrityViolationException ex) {
+ // Respaldo ante violación de unicidad de DB
+ throw new IdentificacionDuplicadaException(oveja.getIdentificacion());
+ }
  }
  @Override
  public Oveja buscarPorId(Long id){
@@ -40,16 +52,20 @@ public class OvejaGatewayImpl implements OvejaGateway {
  if(!repository.existsById(oveja.getIdOveja())){
  throw new OvejaNotFoundException(oveja.getIdOveja());
  }
+ // validar duplicado si cambia identificación
+ if (oveja.getIdentificacion() != null) {
+ OvejaData existente = repository.findByIdentificacion(oveja.getIdentificacion());
+ if (existente != null && !existente.getId().equals(oveja.getIdOveja())) {
+ throw new IdentificacionDuplicadaException(oveja.getIdentificacion());
+ }
+ }
  var data = mapper.toData(oveja);
- if (data.getPropietario() != null) {
- Long ownerId = data.getPropietario().getId();
- if (ownerId == null || !usuarioRepository.existsById(ownerId)) {
- throw new DomainValidationException("Propietario no existe");
- }
- data.setPropietario(usuarioRepository.getReferenceById(ownerId));
- }
+ try {
  var updated = repository.save(data);
  return mapper.toDomain(updated);
+ } catch (DataIntegrityViolationException ex) {
+ throw new IdentificacionDuplicadaException(oveja.getIdentificacion());
+ }
  }
  @Override
  public void eliminar(Long id){
@@ -66,5 +82,9 @@ public class OvejaGatewayImpl implements OvejaGateway {
  @Override
  public Page<Oveja> obtenerPaginado(Pageable pageable){
  return repository.findAll(pageable).map(mapper::toDomain);
+ }
+ @Override
+ public Page<Oveja> obtenerPorGanadero(Long ganaderoId, Pageable pageable){
+ return repository.findByGanaderoId(ganaderoId, pageable).map(mapper::toDomain);
  }
 }

@@ -7,41 +7,48 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entidad JPA de persistencia para ovejas.
+ *
+ * Importante: se almacena solo el id del ganadero (ganadero_id) para no
+ * generar dependencia fuerte con el microservicio de ganaderos.
+ */
 @Entity
 @Table(name = "ovejas")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class OvejaData {
- @Id
- @GeneratedValue(strategy = GenerationType.IDENTITY)
- @Column(name = "id_oveja")
- private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_oveja")
+    private Long id;
 
- @Column(name = "identificacion", nullable = false, unique = true)
- private String identificacion;
+    @Column(name = "identificacion", nullable = false, unique = true)
+    private String identificacion;
 
- private String raza;
+    private String raza;
 
- @Column(name = "edad")
- private Integer edad; // a?os
+    @Column(name = "edad")
+    private Integer edad; // años
 
- private Boolean sexo; // TRUE hembra, FALSE macho
+    private Boolean sexo; // TRUE hembra, FALSE macho
 
- @Column(name = "estado_salud")
- private String estadoSalud;
+    @Column(name = "estado_salud")
+    private String estadoSalud;
 
- @ManyToOne(fetch = FetchType.LAZY)
- @JoinColumn(name = "propietario_id")
- private UsuarioData propietario;
+    // Desac acoplamiento: solo guardar el id del ganadero
+    @Column(name = "ganadero_id")
+    private Long ganaderoId;
 
- @Column(name = "fecha_registro", updatable = false)
- private LocalDateTime fechaRegistro;
+    @Column(name = "fecha_registro", updatable = false)
+    private LocalDateTime fechaRegistro;
 
- @PrePersist
- private void onCreate() {
- if (this.fechaRegistro == null) {
- this.fechaRegistro = LocalDateTime.now();
- }
- }
+    @PrePersist
+    private void onCreate() {
+        // Establecer fecha de registro automática si no viene informada
+        if (this.fechaRegistro == null) {
+            this.fechaRegistro = LocalDateTime.now();
+        }
+    }
 }
