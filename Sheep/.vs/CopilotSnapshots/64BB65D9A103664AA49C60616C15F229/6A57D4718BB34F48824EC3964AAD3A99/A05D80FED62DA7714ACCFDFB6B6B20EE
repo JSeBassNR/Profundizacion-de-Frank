@@ -1,0 +1,143 @@
+﻿package com.example.Sheep.infrastructure.entry_points;
+
+import com.example.Sheep.domain.exception.DomainValidationException;
+import com.example.Sheep.domain.exception.IdentificacionDuplicadaException;
+import com.example.Sheep.domain.exception.OvejaNotFoundException;
+import com.example.Sheep.domain.exception.PropietarioNotFoundException;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+
+import jakarta.validation.ConstraintViolationException;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+@ControllerAdvice
+public class GlobalExceptionHandler {
+ @ExceptionHandler(OvejaNotFoundException.class)
+ public ResponseEntity<Map<String, Object>> handleNotFound(OvejaNotFoundException ex){
+ return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Oveja no encontrada",
+ "message", ex.getMessage()
+));
+ }
+
+ @ExceptionHandler(PropietarioNotFoundException.class)
+ public ResponseEntity<Map<String, Object>> handleOwnerNotFound(PropietarioNotFoundException ex){
+ return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Propietario no encontrado",
+ "message", ex.getMessage()
+));
+ }
+
+ @ExceptionHandler(IdentificacionDuplicadaException.class)
+ public ResponseEntity<Map<String, Object>> handleDuplicate(IdentificacionDuplicadaException ex){
+ return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Identificación duplicada",
+ "message", ex.getMessage()
+));
+ }
+
+ @ExceptionHandler(DomainValidationException.class)
+ public ResponseEntity<Map<String, Object>> handleDomainValidation(DomainValidationException ex){
+ return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Error de validación de dominio",
+ "message", ex.getMessage()
+));
+ }
+
+ // Validación de DTOs (@Valid)
+ @ExceptionHandler(MethodArgumentNotValidException.class)
+ public ResponseEntity<Map<String, Object>> handleMethodArgumentNotValid(MethodArgumentNotValidException ex){
+ List<Map<String, String>> errors = ex.getBindingResult()
+ .getFieldErrors()
+ .stream()
+ .map(this::toFieldError)
+ .collect(Collectors.toList());
+ return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Solicitud inválida",
+ "message", "Los datos enviados no son válidos",
+ "details", errors
+));
+ }
+
+ // Validación de parámetros (ConstraintViolation)
+ @ExceptionHandler(ConstraintViolationException.class)
+ public ResponseEntity<Map<String, Object>> handleConstraintViolation(ConstraintViolationException ex){
+ List<Map<String, String>> errors = ex.getConstraintViolations().stream()
+ .map(v -> Map.of(
+ "field", v.getPropertyPath().toString(),
+ "message", v.getMessage()
+ ))
+ .collect(Collectors.toList());
+ return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Parámetros inválidos",
+ "message", "Existen parámetros inválidos en la solicitud",
+ "details", errors
+));
+ }
+
+ // Tipo incorrecto en path/query (p.e. id no numérico)
+ @ExceptionHandler(MethodArgumentTypeMismatchException.class)
+ public ResponseEntity<Map<String, Object>> handleTypeMismatch(MethodArgumentTypeMismatchException ex){
+ String name = ex.getName();
+ String required = ex.getRequiredType() != null ? ex.getRequiredType().getSimpleName() : "tipo esperado";
+ String msg = String.format("El parámetro '%s' tiene un tipo inválido. Se esperaba %s.", name, required);
+ return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Parámetro inválido",
+ "message", msg
+));
+ }
+
+ // JSON mal formado o tipos incorrectos en el cuerpo
+ @ExceptionHandler(HttpMessageNotReadableException.class)
+ public ResponseEntity<Map<String, Object>> handleNotReadable(HttpMessageNotReadableException ex){
+ String cause = ex.getMostSpecificCause() != null ? ex.getMostSpecificCause().getMessage() : ex.getMessage();
+ return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Cuerpo de la solicitud inválido",
+ "message", cause
+));
+ }
+
+ // Respaldo para integridad de datos de DB
+ @ExceptionHandler(DataIntegrityViolationException.class)
+ public ResponseEntity<Map<String, Object>> handleDataIntegrity(DataIntegrityViolationException ex){
+ return ResponseEntity.status(HttpStatus.CONFLICT).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Conflicto de datos",
+ "message", "La operación viola restricciones de integridad de datos"
+));
+ }
+
+ @ExceptionHandler(Exception.class)
+ public ResponseEntity<Map<String, Object>> handleOther(Exception ex){
+ return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(Map.of(
+ "timestamp", LocalDateTime.now().toString(),
+ "error", "Error interno del servidor",
+ "message", ex.getMessage()
+));
+ }
+
+ private Map<String, String> toFieldError(FieldError fe){
+ return Map.of(
+ "field", fe.getField(),
+ "message", fe.getDefaultMessage() == null ? "Valor inválido" : fe.getDefaultMessage()
+ );
+ }
+}

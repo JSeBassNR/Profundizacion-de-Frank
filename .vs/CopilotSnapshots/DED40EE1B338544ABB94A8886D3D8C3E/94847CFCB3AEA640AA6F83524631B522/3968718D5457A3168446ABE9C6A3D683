@@ -1,0 +1,47 @@
+﻿package com.example.Sheep.infraestructure.drive_adapters.jpa_repository;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "ovejas")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class OvejaData {
+ @Id
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+ @Column(name = "id_oveja")
+ private Long id;
+
+ @Column(name = "identificacion", nullable = false, unique = true)
+ private String identificacion;
+
+ private String raza;
+
+ @Column(name = "edad")
+ private Integer edad; // a?os
+
+ private Boolean sexo; // TRUE hembra, FALSE macho
+
+ @Column(name = "estado_salud")
+ private String estadoSalud;
+
+ @ManyToOne(fetch = FetchType.LAZY)
+ @JoinColumn(name = "propietario_id")
+ private UsuarioData propietario;
+
+ @Column(name = "fecha_registro", updatable = false)
+ private LocalDateTime fechaRegistro;
+
+ @PrePersist
+ private void onCreate() {
+ if (this.fechaRegistro == null) {
+ this.fechaRegistro = LocalDateTime.now();
+ }
+ }
+}

@@ -10,6 +10,10 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
+/**
+ * Adaptador de salida para persistencia JPA de Ganadero.
+ * Implementa el puerto de dominio {@link com.example.sheep.domain.model.gateway.GanaderoGateway}.
+ */
 @Repository
 @RequiredArgsConstructor
 public class GanaderoGatewayImpl implements GanaderoGateway {

@@ -1,11 +1,20 @@
 package com.example.Sheep.infraestructure.mapper;
 
 import com.example.Sheep.domain.model.Oveja;
-import com.example.Sheep.domain.model.Usuario;
 import com.example.Sheep.infraestructure.drive_adapters.jpa_repository.OvejaData;
-import com.example.Sheep.infraestructure.drive_adapters.jpa_repository.UsuarioData;
+import com.example.Sheep.infraestructure.entry_points.dto.OvejaRequestDTO;
+import com.example.Sheep.infraestructure.entry_points.dto.OvejaResponseDTO;
 import org.springframework.stereotype.Component;
 
+/**
+ * Mapper responsable de convertir entre:
+ * - Capa de persistencia (OvejaData)
+ * - Capa de dominio (Oveja)
+ * - DTOs de entrada/salida
+ *
+ * Nota: se mantiene compatibilidad con los DTOs existentes usando
+ * el campo propietarioId para representar ganaderoId.
+ */
 @Component
 public class OvejaMapper {
  public Oveja toDomain(OvejaData data){
@@ -18,11 +27,7 @@ public class OvejaMapper {
  o.setSexo(data.getSexo());
  o.setEstadoSalud(data.getEstadoSalud());
  o.setFechaRegistro(data.getFechaRegistro());
- if(data.getPropietario()!=null){
- Usuario propietario = new Usuario();
- propietario.setIdUsuario(data.getPropietario().getId());
- o.setPropietario(propietario);
- }
+ o.setGanaderoId(data.getGanaderoId());
  return o;
  }
  public OvejaData toData(Oveja domain){
@@ -35,11 +40,36 @@ public class OvejaMapper {
  d.setSexo(domain.getSexo());
  d.setEstadoSalud(domain.getEstadoSalud());
  d.setFechaRegistro(domain.getFechaRegistro());
- if(domain.getPropietario()!=null && domain.getPropietario().getIdUsuario()!=null){
- UsuarioData u = new UsuarioData();
- u.setId(domain.getPropietario().getIdUsuario());
- d.setPropietario(u);
- }
+ d.setGanaderoId(domain.getGanaderoId());
  return d;
+ }
+
+ // DTO mappings
+ public Oveja toDomain(OvejaRequestDTO dto){
+ if(dto==null) return null;
+ Oveja o = new Oveja();
+ o.setIdentificacion(dto.getIdentificacion());
+ o.setRaza(dto.getRaza());
+ o.setEdad(dto.getEdad());
+ o.setSexo(dto.getSexo());
+ o.setEstadoSalud(dto.getEstadoSalud());
+ // mantener compatibilidad: propietarioId en DTO mapea a ganaderoId
+ o.setGanaderoId(dto.getPropietarioId());
+ return o;
+ }
+
+ public OvejaResponseDTO toResponse(Oveja domain){
+ if(domain==null) return null;
+ Long propietarioId = domain.getGanaderoId();
+ return OvejaResponseDTO.builder()
+ .id(domain.getIdOveja())
+ .identificacion(domain.getIdentificacion())
+ .raza(domain.getRaza())
+ .edad(domain.getEdad())
+ .sexo(domain.getSexo())
+ .estadoSalud(domain.getEstadoSalud())
+ .fechaRegistro(domain.getFechaRegistro())
+ .propietarioId(propietarioId)
+ .build();
  }
 }
