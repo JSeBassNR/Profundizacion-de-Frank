@@ -3,6 +3,7 @@ package com.example.Sheep.infraestructure.mapper;
 import com.example.Sheep.domain.model.Oveja;
 import com.example.Sheep.domain.model.Usuario;
 import com.example.Sheep.infraestructure.drive_adapters.jpa_repository.OvejaData;
+import com.example.Sheep.infraestructure.drive_adapters.jpa_repository.UsuarioData;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,9 +17,10 @@ public class OvejaMapper {
  o.setEdad(data.getEdad());
  o.setSexo(data.getSexo());
  o.setEstadoSalud(data.getEstadoSalud());
- if(data.getPropietarioId()!=null){
+ o.setFechaRegistro(data.getFechaRegistro());
+ if(data.getPropietario()!=null){
  Usuario propietario = new Usuario();
- propietario.setIdUsuario(data.getPropietarioId());
+ propietario.setIdUsuario(data.getPropietario().getId());
  o.setPropietario(propietario);
  }
  return o;
@@ -32,7 +34,12 @@ public class OvejaMapper {
  d.setEdad(domain.getEdad());
  d.setSexo(domain.getSexo());
  d.setEstadoSalud(domain.getEstadoSalud());
- d.setPropietarioId(domain.getPropietario()!=null? domain.getPropietario().getIdUsuario(): null);
+ d.setFechaRegistro(domain.getFechaRegistro());
+ if(domain.getPropietario()!=null && domain.getPropietario().getIdUsuario()!=null){
+ UsuarioData u = new UsuarioData();
+ u.setId(domain.getPropietario().getIdUsuario());
+ d.setPropietario(u);
+ }
  return d;
  }
 }

@@ -1,7 +1,6 @@
-package com.example.sheep.infraestructura.mapper;
+package com.example.sheep.infraestructure.mapper;
 
 import com.example.sheep.domain.model.Ganadero;
-
 import com.example.sheep.infraestructure.driver_adapters.jpa_repository.GanaderoData;
 import org.springframework.stereotype.Component;
 

@@ -12,25 +12,25 @@ import com.example.sheep.domain.exception.DomainValidationException;
 @Setter
 @Getter
 public class Ganadero {
- // Identificador �nico del ganadero
+ // Identificador único del ganadero
  private Long id;
  // Nombre completo del ganadero
  private String nombre;
- // Correo electr�nico de contacto
+ // Correo electrónico de contacto
  private String email;
- // Tel�fono de contacto (opcional)
+ // Teléfono de contacto (opcional)
  private String telefono;
- // Ubicaci�n o direcci�n (opcional)
+ // Ubicación o dirección (opcional)
  private String ubicacion;
 
- // Reglas de validaci�n de dominio
+ // Reglas de validación de dominio
  public void validate() {
  if (nombre == null || nombre.isBlank()) {
  throw new DomainValidationException("Nombre de ganadero es requerido");
  }
  if (email == null || email.isBlank() || !email.contains("@")) {
- throw new DomainValidationException("Correo v�lido es requerido");
+ throw new DomainValidationException("Correo válido es requerido");
  }
- // tel�fono y ubicaci�n son opcionales
+ // teléfono y ubicación son opcionales
  }
 }

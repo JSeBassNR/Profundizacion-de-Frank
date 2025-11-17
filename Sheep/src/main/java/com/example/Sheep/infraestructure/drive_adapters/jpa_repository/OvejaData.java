@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "ovejas")
 @AllArgsConstructor
@@ -22,13 +24,24 @@ public class OvejaData {
  private String raza;
 
  @Column(name = "edad")
- private Integer edad; // años
+ private Integer edad; // a?os
 
  private Boolean sexo; // TRUE hembra, FALSE macho
 
  @Column(name = "estado_salud")
  private String estadoSalud;
 
- @Column(name = "propietario_id")
- private Long propietarioId;
+ @ManyToOne(fetch = FetchType.LAZY)
+ @JoinColumn(name = "propietario_id")
+ private UsuarioData propietario;
+
+ @Column(name = "fecha_registro", updatable = false)
+ private LocalDateTime fechaRegistro;
+
+ @PrePersist
+ private void onCreate() {
+ if (this.fechaRegistro == null) {
+ this.fechaRegistro = LocalDateTime.now();
+ }
+ }
 }

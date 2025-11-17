@@ -11,6 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.URI;
+
 @RestController
 @RequestMapping("/api/ovejas")
 @RequiredArgsConstructor
@@ -21,30 +23,24 @@ public class OvejaController {
  @PostMapping
  public ResponseEntity<Oveja> save(@RequestBody OvejaData request){
  var saved = useCase.guardar(mapper.toDomain(request));
- return ResponseEntity.ok(saved);
+ return ResponseEntity.created(URI.create("/api/ovejas/" + saved.getIdOveja())).body(saved);
  }
  @GetMapping("/{id}")
  public ResponseEntity<Oveja> findById(@PathVariable Long id){
  var o = useCase.buscarPorId(id);
- return o!=null? ResponseEntity.ok(o): ResponseEntity.notFound().build();
+ return ResponseEntity.ok(o);
  }
- @PutMapping
- public ResponseEntity<Oveja> update(@RequestBody OvejaData request){
- try{
- var updated = useCase.actualizar(mapper.toDomain(request));
+ @PutMapping("/{id}")
+ public ResponseEntity<Oveja> update(@PathVariable Long id, @RequestBody OvejaData request){
+ var domain = mapper.toDomain(request);
+ domain.setIdOveja(id);
+ var updated = useCase.actualizar(domain);
  return ResponseEntity.ok(updated);
- }catch(Exception e){
- return ResponseEntity.badRequest().build();
- }
  }
  @DeleteMapping("/{id}")
  public ResponseEntity<Void> delete(@PathVariable Long id){
- try{
  useCase.eliminar(id);
- return ResponseEntity.ok().build();
- }catch(Exception e){
- return ResponseEntity.notFound().build();
- }
+ return ResponseEntity.noContent().build();
  }
  @GetMapping("/identificacion/{identificacion}")
  public ResponseEntity<Oveja> findByIdentificador(@PathVariable String identificacion){
