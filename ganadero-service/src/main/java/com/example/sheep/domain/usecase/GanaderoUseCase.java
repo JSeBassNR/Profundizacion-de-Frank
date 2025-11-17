@@ -1,6 +1,7 @@
 package com.example.sheep.domain.usecase;
 
 import com.example.sheep.domain.exception.DomainValidationException;
+import com.example.sheep.domain.exception.DuplicateEmailException;
 import com.example.sheep.domain.model.Ganadero;
 import com.example.sheep.domain.model.gateway.GanaderoGateway;
 import lombok.RequiredArgsConstructor;
@@ -15,6 +16,11 @@ public class GanaderoUseCase {
 
  public Ganadero guardar(Ganadero g){
  g.validate();
+ // Regla: no permitir correos repetidos
+ var existente = gateway.buscarPorEmail(g.getEmail());
+ if (existente != null) {
+ throw new DuplicateEmailException("Ya existe un ganadero con el correo: " + g.getEmail());
+ }
  return gateway.guardar(g);
  }
  public Ganadero buscarPorId(Long id){
@@ -25,6 +31,11 @@ public class GanaderoUseCase {
  throw new DomainValidationException("ID requerido");
  }
  g.validate();
+ // Si cambia el email, validar duplicado contra otro registro
+ var existente = gateway.buscarPorEmail(g.getEmail());
+ if (existente != null && !existente.getId().equals(g.getId())) {
+ throw new DuplicateEmailException("Ya existe un ganadero con el correo: " + g.getEmail());
+ }
  return gateway.actualizar(g);
  }
  public void eliminar(Long id){

@@ -1,0 +1,61 @@
+﻿package com.example.sheep.infraestructura.entry_points;
+
+
+import com.example.sheep.domain.model.Ganadero;
+
+import com.example.sheep.domain.usecase.GanaderoUseCase;
+
+import com.example.sheep.infraestructure.driver_adapters.jpa_repository.GanaderoData;
+
+import com.example.sheep.infraestructure.mapper.GanaderoMapper;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.net.URI;
+
+@RestController
+@RequestMapping("/api/ganaderos")
+@RequiredArgsConstructor
+public class GanaderoController {
+ private final GanaderoUseCase useCase;
+ private final GanaderoMapper mapper;
+
+ @PostMapping
+ public ResponseEntity<Ganadero> save(@RequestBody GanaderoData request){
+ var saved = useCase.guardar(mapper.toDomain(request));
+ return ResponseEntity.created(URI.create("/api/ganaderos/" + saved.getId())).body(saved);
+ }
+ @GetMapping("/{id}")
+ public ResponseEntity<Ganadero> findById(@PathVariable Long id){
+ var g = useCase.buscarPorId(id);
+ return ResponseEntity.ok(g);
+ }
+ @PutMapping("/{id}")
+ public ResponseEntity<Ganadero> update(@PathVariable Long id, @RequestBody GanaderoData request){
+ var domain = mapper.toDomain(request);
+ domain.setId(id);
+ var updated = useCase.actualizar(domain);
+ return ResponseEntity.ok(updated);
+ }
+ @DeleteMapping("/{id}")
+ public ResponseEntity<Void> delete(@PathVariable Long id){
+ useCase.eliminar(id);
+ return ResponseEntity.noContent().build();
+ }
+ @GetMapping("/email/{email}")
+ public ResponseEntity<Ganadero> findByEmail(@PathVariable String email){
+ var g = useCase.buscarPorEmail(email);
+ return g!=null? ResponseEntity.ok(g): ResponseEntity.notFound().build();
+ }
+ @GetMapping
+ public ResponseEntity<Page<Ganadero>> findAllPaged(@RequestParam(defaultValue="0") int page,
+ @RequestParam(defaultValue="10") int size){
+ var ganaderos = useCase.obtenerPaginado(PageRequest.of(page, size));
+ if(ganaderos.hasContent()) return ResponseEntity.ok(ganaderos);
+ return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ }
+}

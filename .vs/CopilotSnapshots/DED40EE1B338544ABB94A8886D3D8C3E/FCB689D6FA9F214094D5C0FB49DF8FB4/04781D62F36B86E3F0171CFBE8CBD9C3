@@ -1,0 +1,5 @@
+﻿package com.example.Sheep.domain.model.gateway;
+
+public interface GanaderoClientGateway {
+ boolean existeGanadero(Long id);
+}

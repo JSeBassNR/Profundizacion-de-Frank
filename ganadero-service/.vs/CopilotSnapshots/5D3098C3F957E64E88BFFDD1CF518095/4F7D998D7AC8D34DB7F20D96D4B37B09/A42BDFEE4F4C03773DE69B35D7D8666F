@@ -1,0 +1,44 @@
+﻿package com.example.sheep.domain.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import com.example.sheep.domain.exception.InvalidEmailException;
+import com.example.sheep.domain.exception.InvalidNameException;
+import com.example.sheep.domain.exception.InvalidPhoneException;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class Ganadero {
+ // Identificador único del ganadero
+ private Long id;
+ // Nombre completo del ganadero
+ private String nombre;
+ // Correo electrónico de contacto
+ private String email;
+ // Teléfono de contacto (opcional)
+ private String telefono;
+ // Ubicación o dirección (opcional)
+ private String ubicacion;
+
+ // Reglas de validación de dominio
+ public void validate() {
+ if (nombre == null || nombre.isBlank() || nombre.trim().length() <2) {
+ throw new InvalidNameException("Nombre de ganadero es requerido y debe tener al menos 2 caracteres");
+ }
+ if (email == null || email.isBlank() || !email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+ throw new InvalidEmailException("Correo válido es requerido");
+ }
+ if (telefono != null && !telefono.isBlank()) {
+ String phone = telefono.trim();
+ if (!phone.matches("^[0-9+()\\-\\s]{7,20}$")) {
+ throw new InvalidPhoneException("Teléfono inválido");
+ }
+ }
+ // ubicación es opcional
+ }
+}

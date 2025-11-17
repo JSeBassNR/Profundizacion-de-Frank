@@ -2,17 +2,25 @@ package com.example.Sheep.infraestructure.entry_points;
 
 import com.example.Sheep.domain.model.Oveja;
 import com.example.Sheep.domain.usecase.OvejaUseCase;
-import com.example.Sheep.infraestructure.drive_adapters.jpa_repository.OvejaData;
+import com.example.Sheep.infraestructure.entry_points.dto.OvejaRequestDTO;
+import com.example.Sheep.infraestructure.entry_points.dto.OvejaResponseDTO;
 import com.example.Sheep.infraestructure.mapper.OvejaMapper;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.List;
 
+/**
+ * Controlador HTTP para recursos de Oveja.
+ * Expone endpoints CRUD y consulta por ganadero.
+ */
 @RestController
 @RequestMapping("/api/ovejas")
 @RequiredArgsConstructor
@@ -21,21 +29,22 @@ public class OvejaController {
  private final OvejaMapper mapper;
 
  @PostMapping
- public ResponseEntity<Oveja> save(@RequestBody OvejaData request){
- var saved = useCase.guardar(mapper.toDomain(request));
- return ResponseEntity.created(URI.create("/api/ovejas/" + saved.getIdOveja())).body(saved);
+ public ResponseEntity<OvejaResponseDTO> save(@Valid @RequestBody OvejaRequestDTO request){
+ Oveja saved = useCase.guardar(mapper.toDomain(request));
+ return ResponseEntity.created(URI.create("/api/ovejas/" + saved.getIdOveja()))
+ .body(mapper.toResponse(saved));
  }
  @GetMapping("/{id}")
- public ResponseEntity<Oveja> findById(@PathVariable Long id){
+ public ResponseEntity<OvejaResponseDTO> findById(@PathVariable Long id){
  var o = useCase.buscarPorId(id);
- return ResponseEntity.ok(o);
+ return ResponseEntity.ok(mapper.toResponse(o));
  }
  @PutMapping("/{id}")
- public ResponseEntity<Oveja> update(@PathVariable Long id, @RequestBody OvejaData request){
+ public ResponseEntity<OvejaResponseDTO> update(@PathVariable Long id, @Valid @RequestBody OvejaRequestDTO request){
  var domain = mapper.toDomain(request);
  domain.setIdOveja(id);
  var updated = useCase.actualizar(domain);
- return ResponseEntity.ok(updated);
+ return ResponseEntity.ok(mapper.toResponse(updated));
  }
  @DeleteMapping("/{id}")
  public ResponseEntity<Void> delete(@PathVariable Long id){
@@ -43,15 +52,29 @@ public class OvejaController {
  return ResponseEntity.noContent().build();
  }
  @GetMapping("/identificacion/{identificacion}")
- public ResponseEntity<Oveja> findByIdentificador(@PathVariable String identificacion){
+ public ResponseEntity<OvejaResponseDTO> findByIdentificador(@PathVariable String identificacion){
  var o = useCase.buscarPorIdentificacion(identificacion);
- return o!=null? ResponseEntity.ok(o): ResponseEntity.notFound().build();
+ return o!=null? ResponseEntity.ok(mapper.toResponse(o)): ResponseEntity.notFound().build();
  }
  @GetMapping
- public ResponseEntity<Page<Oveja>> findAllPaged(@RequestParam(defaultValue="0") int page,
+ public ResponseEntity<Page<OvejaResponseDTO>> findAllPaged(@RequestParam(defaultValue="0") int page,
  @RequestParam(defaultValue="10") int size){
  var ovejas = useCase.obtenerPaginado(PageRequest.of(page, size));
- if(ovejas.hasContent()) return ResponseEntity.ok(ovejas);
- return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ if(!ovejas.hasContent()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ List<OvejaResponseDTO> content = ovejas.getContent().stream().map(mapper::toResponse).toList();
+ Page<OvejaResponseDTO> dtoPage = new PageImpl<>(content, ovejas.getPageable(), ovejas.getTotalElements());
+ return ResponseEntity.ok(dtoPage);
+ }
+
+ // Nuevos endpoints: relación con ganadero
+ @GetMapping("/ganadero/{ganaderoId}")
+ public ResponseEntity<Page<OvejaResponseDTO>> findByGanadero(@PathVariable Long ganaderoId,
+ @RequestParam(defaultValue="0") int page,
+ @RequestParam(defaultValue="10") int size){
+ var ovejas = useCase.obtenerPorGanadero(ganaderoId, PageRequest.of(page, size));
+ if(!ovejas.hasContent()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ List<OvejaResponseDTO> content = ovejas.getContent().stream().map(mapper::toResponse).toList();
+ Page<OvejaResponseDTO> dtoPage = new PageImpl<>(content, ovejas.getPageable(), ovejas.getTotalElements());
+ return ResponseEntity.ok(dtoPage);
  }
 }

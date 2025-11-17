@@ -11,4 +11,5 @@ public interface OvejaGateway {
  void eliminar(Long id);
  Oveja buscarPorIdentificacion(String identificacion);
  Page<Oveja> obtenerPaginado(Pageable pageable);
+ Page<Oveja> obtenerPorGanadero(Long ganaderoId, Pageable pageable);
 }

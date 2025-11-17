@@ -5,57 +5,67 @@ import com.example.sheep.domain.model.Ganadero;
 
 import com.example.sheep.domain.usecase.GanaderoUseCase;
 
-import com.example.sheep.infraestructure.driver_adapters.jpa_repository.GanaderoData;
-
+import com.example.sheep.infraestructura.dto.GanaderoRequest;
+import com.example.sheep.infraestructura.dto.GanaderoResponse;
+import com.example.sheep.infraestructura.dto.GanaderoUpdateRequest;
 import com.example.sheep.infraestructure.mapper.GanaderoMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.stream.Collectors;
 
+/**
+ * Controlador HTTP de Ganadero.
+ * Expone endpoints CRUD y consultas de paginación.
+ */
 @RestController
-@RequestMapping("/api/ganaderos")
+@RequestMapping("/api/ganadero")
 @RequiredArgsConstructor
 public class GanaderoController {
  private final GanaderoUseCase useCase;
  private final GanaderoMapper mapper;
 
- @PostMapping
- public ResponseEntity<Ganadero> save(@RequestBody GanaderoData request){
- var saved = useCase.guardar(mapper.toDomain(request));
- return ResponseEntity.created(URI.create("/api/ganaderos/" + saved.getId())).body(saved);
+ @PostMapping("/save")
+ public ResponseEntity<GanaderoResponse> save(@RequestBody GanaderoRequest request){
+ Ganadero saved = useCase.guardar(mapper.toDomain(request));
+ return ResponseEntity.created(URI.create("/api/ganadero/" + saved.getId()))
+ .body(mapper.toResponse(saved));
  }
  @GetMapping("/{id}")
- public ResponseEntity<Ganadero> findById(@PathVariable Long id){
+ public ResponseEntity<GanaderoResponse> findById(@PathVariable Long id){
  var g = useCase.buscarPorId(id);
- return ResponseEntity.ok(g);
+ return ResponseEntity.ok(mapper.toResponse(g));
  }
- @PutMapping("/{id}")
- public ResponseEntity<Ganadero> update(@PathVariable Long id, @RequestBody GanaderoData request){
- var domain = mapper.toDomain(request);
- domain.setId(id);
- var updated = useCase.actualizar(domain);
- return ResponseEntity.ok(updated);
+ @PutMapping("/update")
+ public ResponseEntity<GanaderoResponse> update(@RequestBody GanaderoUpdateRequest request){
+ var updated = useCase.actualizar(mapper.toDomain(request));
+ return ResponseEntity.ok(mapper.toResponse(updated));
  }
- @DeleteMapping("/{id}")
+ @DeleteMapping("/delete/{id}")
  public ResponseEntity<Void> delete(@PathVariable Long id){
  useCase.eliminar(id);
  return ResponseEntity.noContent().build();
  }
- @GetMapping("/email/{email}")
- public ResponseEntity<Ganadero> findByEmail(@PathVariable String email){
+ @GetMapping("/buscar-email/{email}")
+ public ResponseEntity<GanaderoResponse> findByEmail(@PathVariable String email){
  var g = useCase.buscarPorEmail(email);
- return g!=null? ResponseEntity.ok(g): ResponseEntity.notFound().build();
+ return g!=null? ResponseEntity.ok(mapper.toResponse(g)): ResponseEntity.notFound().build();
  }
- @GetMapping
- public ResponseEntity<Page<Ganadero>> findAllPaged(@RequestParam(defaultValue="0") int page,
+ @GetMapping("/all")
+ public ResponseEntity<Page<GanaderoResponse>> findAllPaged(@RequestParam(defaultValue="0") int page,
  @RequestParam(defaultValue="10") int size){
  var ganaderos = useCase.obtenerPaginado(PageRequest.of(page, size));
- if(ganaderos.hasContent()) return ResponseEntity.ok(ganaderos);
- return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ if(!ganaderos.hasContent()) return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+ var content = ganaderos.getContent().stream()
+ .map(mapper::toResponse)
+ .collect(Collectors.toList());
+ var pageResp = new PageImpl<>(content, ganaderos.getPageable(), ganaderos.getTotalElements());
+ return ResponseEntity.ok(pageResp);
  }
 }

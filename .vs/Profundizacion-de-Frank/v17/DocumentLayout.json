@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\GanaderoClientGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\GanaderoClientGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\client\\GanaderoClient.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\client\\GanaderoClient.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infrastructure\\config\\RestClientConfig.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infrastructure\\config\\RestClientConfig.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\resources\\application.properties||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\resources\\application.properties||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\dto\\OvejasPorGanaderoResponseDTO.java||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\dto\\OvejasPorGanaderoResponseDTO.java||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\driver_adapters\\jpa_repository\\GanaderoGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\driver_adapters\\jpa_repository\\GanaderoGatewayImpl.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructura\\entry_points\\GanaderoController.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructura\\entry_points\\GanaderoController.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\mapper\\GanaderoMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\mapper\\GanaderoMapper.java||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OvejaGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\OvejaGateway.java",
+              "ViewState": "AgIAAA0AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:14:59.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RestClientConfig.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infrastructure\\config\\RestClientConfig.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infrastructure\\config\\RestClientConfig.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infrastructure\\config\\RestClientConfig.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infrastructure\\config\\RestClientConfig.java",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:03:21.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GanaderoClient.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\client\\GanaderoClient.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\client\\GanaderoClient.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\client\\GanaderoClient.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\client\\GanaderoClient.java",
+              "ViewState": "AgIAACUAAAAAAAAAAIBJwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:03:13.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GanaderoClientGateway.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\GanaderoClientGateway.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\GanaderoClientGateway.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\GanaderoClientGateway.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\gateway\\GanaderoClientGateway.java",
+              "ViewState": "AgIAAAcAAAAAAAAAAIBJwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:03:07.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OvejaGatewayImpl.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaGatewayImpl.java",
+              "ViewState": "AgIAAFgAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T05:56:46.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Oveja.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\model\\Oveja.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T05:56:09.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GanaderoMapper.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\mapper\\GanaderoMapper.java",
+              "RelativeDocumentMoniker": "ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\mapper\\GanaderoMapper.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\mapper\\GanaderoMapper.java",
+              "RelativeToolTip": "ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\mapper\\GanaderoMapper.java",
+              "ViewState": "AgIAAEUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:24:02.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GanaderoController.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructura\\entry_points\\GanaderoController.java",
+              "RelativeDocumentMoniker": "ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructura\\entry_points\\GanaderoController.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructura\\entry_points\\GanaderoController.java",
+              "RelativeToolTip": "ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructura\\entry_points\\GanaderoController.java",
+              "ViewState": "AgIAAEUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:23:45.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GanaderoGatewayImpl.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\driver_adapters\\jpa_repository\\GanaderoGatewayImpl.java",
+              "RelativeDocumentMoniker": "ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\driver_adapters\\jpa_repository\\GanaderoGatewayImpl.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\driver_adapters\\jpa_repository\\GanaderoGatewayImpl.java",
+              "RelativeToolTip": "ganadero-service\\src\\main\\java\\com\\example\\sheep\\infraestructure\\driver_adapters\\jpa_repository\\GanaderoGatewayImpl.java",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:23:27.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OvejaController.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\OvejaController.java",
+              "ViewState": "AgIAAE4AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:15:34.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OvejaMapper.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\mapper\\OvejaMapper.java",
+              "ViewState": "AgIAAEkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T05:56:31.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OvejasPorGanaderoResponseDTO.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\dto\\OvejasPorGanaderoResponseDTO.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\dto\\OvejasPorGanaderoResponseDTO.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\dto\\OvejasPorGanaderoResponseDTO.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\entry_points\\dto\\OvejasPorGanaderoResponseDTO.java",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:14:55.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OvejaDataJpaRepository.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaDataJpaRepository.java",
+              "ViewState": "AgIAABUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:14:48.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "application.properties",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\resources\\application.properties",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\resources\\application.properties",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\resources\\application.properties",
+              "RelativeToolTip": "Sheep\\src\\main\\resources\\application.properties",
+              "ViewState": "AgIAAAsAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:03:39.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OvejaData.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\infraestructure\\drive_adapters\\jpa_repository\\OvejaData.java",
+              "ViewState": "AgIAADQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T05:56:19.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OvejaUseCase.java",
+              "DocumentMoniker": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "RelativeDocumentMoniker": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "ToolTip": "C:\\Users\\NiTRO\\Documents\\Profundizacion de Frank\\Profundizacion-de-Frank\\Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "RelativeToolTip": "Sheep\\src\\main\\java\\com\\example\\Sheep\\domain\\usecase\\OvejaUseCase.java",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-17T06:03:29.028Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

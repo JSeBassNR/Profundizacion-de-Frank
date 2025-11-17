@@ -1,0 +1,23 @@
+﻿package com.example.Sheep.infraestructure.drive_adapters.jpa_repository;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+/**
+ * Repositorio JPA de Oveja con consultas derivadas por convención.
+ */
+@Repository
+public interface OvejaDataJpaRepository extends JpaRepository<OvejaData, Long> {
+    OvejaData findByIdentificacion(String identificacion);
+    
+    /**
+     * Obtiene una página de OvejaData asociada a un ganadero específico.
+     *
+     * @param ganaderoId El ID del ganadero.
+     * @param pageable   Objeto Pageable que contiene información de paginación y clasificación.
+     * @return Una página de OvejaData asociada al ganadero ID proporcionado.
+     */
+    Page<OvejaData> findByGanaderoId(Long ganaderoId, Pageable pageable);
+}

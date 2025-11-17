@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import com.example.sheep.domain.exception.DomainValidationException;
+import com.example.sheep.domain.exception.InvalidEmailException;
+import com.example.sheep.domain.exception.InvalidNameException;
+import com.example.sheep.domain.exception.InvalidPhoneException;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -25,12 +27,18 @@ public class Ganadero {
 
  // Reglas de validación de dominio
  public void validate() {
- if (nombre == null || nombre.isBlank()) {
- throw new DomainValidationException("Nombre de ganadero es requerido");
+ if (nombre == null || nombre.isBlank() || nombre.trim().length() <2) {
+ throw new InvalidNameException("Nombre de ganadero es requerido y debe tener al menos 2 caracteres");
  }
- if (email == null || email.isBlank() || !email.contains("@")) {
- throw new DomainValidationException("Correo válido es requerido");
+ if (email == null || email.isBlank() || !email.matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+ throw new InvalidEmailException("Correo válido es requerido");
  }
- // teléfono y ubicación son opcionales
+ if (telefono != null && !telefono.isBlank()) {
+ String phone = telefono.trim();
+ if (!phone.matches("^[0-9+()\\-\\s]{7,20}$")) {
+ throw new InvalidPhoneException("Teléfono inválido");
+ }
+ }
+ // ubicación es opcional
  }
 }
