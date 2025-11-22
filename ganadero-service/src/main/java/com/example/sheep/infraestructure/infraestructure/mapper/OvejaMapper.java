@@ -1,0 +1,76 @@
+package com.example.Sheep.infraestructure.infraestructure.mapper;
+
+import com.example.Sheep.domain.model.Oveja;
+import com.example.Sheep.infraestructure.drive_adapters.jpa_repository.OvejaData;
+import com.example.Sheep.infraestructure.entry_points.dto.OvejaRequestDTO;
+import com.example.Sheep.infraestructure.entry_points.dto.OvejaResponseDTO;
+import org.springframework.stereotype.Component;
+
+/**
+ * Mapper responsable de convertir entre:
+ * - Capa de persistencia (OvejaData)
+ * - Capa de dominio (Oveja)
+ * - DTOs de entrada/salida
+ *
+ * Nota: se mantiene compatibilidad con los DTOs existentes usando
+ * el campo propietarioId para representar ganaderoId.
+ */
+@Component
+public class OvejaMapper {
+ public Oveja toDomain(OvejaData data){
+ if(data==null) return null;
+ Oveja o = new Oveja();
+ o.setIdOveja(data.getId());
+ o.setIdentificacion(data.getIdentificacion());
+ o.setRaza(data.getRaza());
+ o.setEdad(data.getEdad());
+ o.setSexo(data.getSexo());
+ o.setEstadoSalud(data.getEstadoSalud());
+ o.setFechaRegistro(data.getFechaRegistro());
+ o.setGanaderoId(data.getGanaderoId());
+ return o;
+ }
+ public OvejaData toData(Oveja domain){
+ if(domain==null) return null;
+ OvejaData d = new OvejaData();
+ d.setId(domain.getIdOveja());
+ d.setIdentificacion(domain.getIdentificacion());
+ d.setRaza(domain.getRaza());
+ d.setEdad(domain.getEdad());
+ d.setSexo(domain.getSexo());
+ d.setEstadoSalud(domain.getEstadoSalud());
+ d.setFechaRegistro(domain.getFechaRegistro());
+ d.setGanaderoId(domain.getGanaderoId());
+ return d;
+ }
+
+ // DTO mappings
+ public Oveja toDomain(OvejaRequestDTO dto){
+ if(dto==null) return null;
+ Oveja o = new Oveja();
+ o.setIdentificacion(dto.getIdentificacion());
+ o.setRaza(dto.getRaza());
+ o.setEdad(dto.getEdad());
+ o.setSexo(dto.getSexo());
+ o.setEstadoSalud(dto.getEstadoSalud());
+ // mantener compatibilidad: propietarioId en DTO mapea a ganaderoId
+ o.setGanaderoId(dto.getPropietarioId());
+ return o;
+ }
+
+ public OvejaResponseDTO toResponse(Oveja domain){
+ if(domain==null) return null;
+ Long propietarioId = domain.getGanaderoId();
+ return OvejaResponseDTO.builder()
+ .id(domain.getIdOveja())
+ .identificacion(domain.getIdentificacion())
+ .raza(domain.getRaza())
+ .edad(domain.getEdad())
+ .sexo(domain.getSexo())
+ .estadoSalud(domain.getEstadoSalud())
+ .fechaRegistro(domain.getFechaRegistro())
+ .propietarioId(propietarioId)
+ .build();
+ }
+}
+
