@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="145e605a-94e0-457f-aff1-23f5c57624fe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Notificacion/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/java/com/example/Sheep/notificacion/NotificacionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/java/com/example/Sheep/notificacion/application/config/AwsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/java/com/example/Sheep/notificacion/infraestructure/ses/SesEmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/java/com/example/Sheep/notificacion/infraestructure/sns/SnsSmsSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/java/com/example/Sheep/notificacion/infraestructure/sqs/SqsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/java/com/example/Sheep/notificacion/infraestructure/sqs/dto/EventoNotificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Notificacion/src/test/java/com/example/Sheep/notificacion/NotificacionApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/FileContentIndex/cbfb2713-a277-4791-bbe6-686c423bfa3c.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/FileContentIndex/d1d4de46-d321-4457-ad42-8bc26c9bfc90.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/exception/DomainValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/exception/IdentificacionDuplicadaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/exception/OvejaNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/exception/PropietarioNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/model/Oveja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/model/gateway/OvejaGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/model/gateway/UsuarioGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/domain/usecase/OvejaUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/client/GanaderoClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/drive_adapters/jpa_repository/OvejaData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/drive_adapters/jpa_repository/OvejaDataJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/drive_adapters/jpa_repository/OvejaGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/drive_adapters/jpa_repository/UsuarioData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/drive_adapters/jpa_repository/UsuarioDataJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/entry_points/OvejaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/entry_points/dto/OvejaRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/entry_points/dto/OvejaResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/entry_points/dto/OvejasPorGanaderoResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/infraestructure/mapper/OvejaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/UsuarioApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/application/config/AwsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/application/config/UseCaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/Notificacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/gateway/EncrypterGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/gateway/NotificacionGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/gateway/UsuarioGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/usecase/UsuarioUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/UsuarioData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/UsuarioDataGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/dto/AnalisisNotificacionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/dto/UsuarioRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/dto/UsuarioResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/dto/UsuarioUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/entry_points/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/mapper/MapperUsuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/message_broker/SqsNotificationGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/message_broker/dto/EventoNotificacionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/security/EncrypterGatewayImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/application/config/AwsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/application/config/UseCaseConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/exception/DomainValidationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/exception/DuplicateEmailException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/exception/GanaderoNotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/exception/InvalidEmailException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/exception/InvalidNameException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/exception/InvalidPhoneException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/model/Notificacion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/model/gateway/EncrypterGateway.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/domain/model/gateway/NotificacionGateway.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/infraestructure/dto/AnalisisNotificacionRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/infraestructure/message_broker/SqsNotificationGatewayImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/infraestructure/message_broker/dto/EventoNotificacionDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/sheep/infraestructure/security/EncrypterGatewayImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/workspace.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/db/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/scripts/detect_batch.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/adapters/color_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/adapters/yolo_detector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/domain/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/infrastructure/api_clients.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/infrastructure/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../workspace/sheep_detector/use_cases/process_images.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/Profundizacion de Frank.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/0A2248091AD1C346557D32BBDB21BCC2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/0A31B5CFD23F466EA40905B4F65C2C59" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/11A67E246B3B91C6B6724C055744602C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/1987BE0A0DE2501FBEAC7E2B85C3D211" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/285444E27473FC732922A79F87435BFA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/2FE9042E27FE4FAA21E17262C876F82D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/35FA7C213419A5197075BEED83D39C1F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/410678E930092837DD3F5DCE0C58A3B8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/4EC8E3C87B6E3EAFBA1F508371A99E1D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/5AD219EB2BD717D2868F0E2CD1C058EB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/5B69828CEC81DA511802650B3FEBF2A4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/5EA4E3C5665D688D61D90CA875C8157D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/67AF52E50AD6FDE3BFC95568C3E72619" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/6A13ED6C1E8638D3E4C2F995DBCD7D03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/7B448843D9E13CB58A7A552239D26EDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/7DE2BC98CB299652F66F2CC55876C042" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/9E73A0A01346BCF000A62DA02F78363C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/A407F33A2CEB5607FF3F24EBD4D025C9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/BBE1A062D37DF8F94D3C807D6008A671" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/BEC2621E32D2469D9BCD2F1F88621CBC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/C1F7A90A7F0FCD41C8579EF41914C302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/D50910A37D5919102E4D19E6439B1291" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/D8FAC30D206BD24E2E2954F71B30E8A0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/DC0D1AD314B0D6F2B4DA5BC9DC2416DE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/E62D7D46C517B2A3A9B6293432C0A8DA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/E962A0764BA81BECEE003A81CDB732EC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/1A695F7624C925419587E4191354E242/F11F4FEB8D8DA11DB6B43832F6722796" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/01D19D26B69CC997C846B3636EB51EE6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/0611F897845CCAA897E093E187D597D4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/0D244E99309C202FDB3CC0C229BA2330" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/157CAC38F3718BD6254797FC9B85CF9E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/1987BE0A0DE2501FBEAC7E2B85C3D211" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/1F8E4EEE53E5D73536BA7D1120E2C7BB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/246463D4A10D4881775D12D1219ACD0C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/285444E27473FC732922A79F87435BFA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/2D5228FD5D3CFC529A44410A45516D62" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/2DC828346A543C174D0A613327495980" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/384026CF1FC01BBD3DA2ACD04019F951" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/410678E930092837DD3F5DCE0C58A3B8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/4124ABD26025A03924B1F5822A26744F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/436D794A4FC356F93D84E3DB9B038945" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/45EEEF7725B0102F5F7208E64B644E78" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/4DE8A07B409B01CEF26D184D5CE42615" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/5643F1BD6A3267CA5719D4A025E7C44C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/5EA4E3C5665D688D61D90CA875C8157D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/62179B5D554571C99F410AB7DC8D5886" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/67AF52E50AD6FDE3BFC95568C3E72619" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/6A13ED6C1E8638D3E4C2F995DBCD7D03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/74F9159D64F37A32E3D665EFE97CB32C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/7B448843D9E13CB58A7A552239D26EDB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/7DE2BC98CB299652F66F2CC55876C042" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/8AF727F4BCAC33478A5D887C177FD7D6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/A2DA176EBC79EFEC7D854E5AC5F37590" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/A4B5BD15717BCE7A04B7F12AFB6EEC9D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/A58485737B648E7A0B3A51D3A8E9B220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/B515B991A3F2B76AD4DD02F9336CCE29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/BEBF1F0A28B7A424F5CB2BE4C1628C52" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/C216D1B7AD91001BBC7D7C5B7B654AB4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/E62D7D46C517B2A3A9B6293432C0A8DA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/E9AE43A6148FBD2060C01B63B6558F5D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/F527ED3EC6DDC5B0ADFDF4DEC195CB6B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/F944399887552A4DD0580E8645054441" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/FC779D0E84EE09B0D43A09BFC2A77451" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/A0A85456049F914290EB6EBEFE6F8A5D/FCFB481D790C28175EFA31353808E55B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/0904FE730F08404C8AD7DEFF441065E1/state.mpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/02D605D1ECDE978D795A3A9951718287" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/04781D62F36B86E3F0171CFBE8CBD9C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/0D23553C4E1A6C9C25845A226AEE20C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/0ED094F00C6995B8145A361ED78BC6FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/0EFC46C2990FD9C68C44FC029396611F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/1767E6E41AD56C76BE1F5FB12B4DC5CA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/229898DD3312221A5391B7247E0773C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/2C8924A1EF74730F3FF363926344D7CB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/3504F1CFF2DD5AB3621A9400304C410A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/52CB804A87816CAEFC11FE3AB52DD71A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/5F84ABC7CC7A84AE66529FACAE587371" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/7104F7C37F4BCD7D5DF4AE690D7A5150" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/85FEF7FD020F477A09AB35D6A0E1E3C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/91B38B30E94FFE931A1B2D5F3847CA58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/9E826597E65752DB21802B86601BA06E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/A8914F66F1C325C126EF49F7BD2D1FDE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/ABE84AA613F1159C245ECBAE5DC0C996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/B3D1225D03BD9B733C338B70EA0685CC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/C76C8C491F82CC7CE1572BC53A0334FE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/CD87E3923AE43F22A5A68F0F85E0AE35" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/CE296744E5A187D725124087F42359C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/CE4995549C3F435F29C96826AD589772" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/37E57FA5F5CF854FA79B49E95A18118B/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/5336DE6B6FCED53C0034F96C4947A60A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/5D7816F6C0857A642553C48E854C8C54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/8E7FB5DFA23ACA0809E03385006F12C6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/9093271D130ADBFC569A84B346E3A4CE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/C76C8C491F82CC7CE1572BC53A0334FE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/D6FF10C1058EF482A0A18D1B8B56E323" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/7169237F0DB97E4DA3A09ABF54FA0DBA/EA042005AEB560F404DB86E06327052E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/02D605D1ECDE978D795A3A9951718287" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/04781D62F36B86E3F0171CFBE8CBD9C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/0ED094F00C6995B8145A361ED78BC6FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/10CACC393D3FF8F6038A36A06C837B19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/1717B773F0F3EBA8C9AA1157F041DBBC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/1767E6E41AD56C76BE1F5FB12B4DC5CA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/229898DD3312221A5391B7247E0773C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/3968718D5457A3168446ABE9C6A3D683" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/3E98A9184F9626F3E1051D953D8A4F68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/7104F7C37F4BCD7D5DF4AE690D7A5150" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/820F5063436B5FF1A671E4577037D538" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/91B38B30E94FFE931A1B2D5F3847CA58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/A26209A574D12938C653EDC36323292F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/ABE84AA613F1159C245ECBAE5DC0C996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/C09700D227FC59D5E1B0D7D413C4CCAB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/C76C8C491F82CC7CE1572BC53A0334FE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/CE296744E5A187D725124087F42359C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/CE4995549C3F435F29C96826AD589772" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/DF225D130B5015DE93637708AF826F03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/E72A90DFC96C6AE8BEFC23A7BC83D919" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/94847CFCB3AEA640AA6F83524631B522/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/02D605D1ECDE978D795A3A9951718287" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/04781D62F36B86E3F0171CFBE8CBD9C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/0B3A44AFF636C805A4ADDF5A4840F3BB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/0ED094F00C6995B8145A361ED78BC6FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/1767E6E41AD56C76BE1F5FB12B4DC5CA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/229898DD3312221A5391B7247E0773C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/3E98A9184F9626F3E1051D953D8A4F68" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/6022BDC68D79F0979E9FCE21368C36FA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/7104F7C37F4BCD7D5DF4AE690D7A5150" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/91B38B30E94FFE931A1B2D5F3847CA58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/A24CFD7306487282732AFEE9F8EB0C3D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/ABE84AA613F1159C245ECBAE5DC0C996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/C76C8C491F82CC7CE1572BC53A0334FE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/CE296744E5A187D725124087F42359C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/CE4995549C3F435F29C96826AD589772" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/EBDC869F5FCD996DFA5BA7879EAF4847" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/EDB3796CFF0AECD593D902E1B5E915C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/F68A6963FD338F15C6F8FFD06E989AAE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/EF5A212463D66E49A231A68E3D3A71DC/F75E926080AFA12FAB53E17F3F4D624B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/02D605D1ECDE978D795A3A9951718287" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/04781D62F36B86E3F0171CFBE8CBD9C3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/0ED094F00C6995B8145A361ED78BC6FC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/1767E6E41AD56C76BE1F5FB12B4DC5CA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/1B6EA8F04A28CE7700F821ECB37A2589" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/229898DD3312221A5391B7247E0773C4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/5386317FC9A391214B812D76F25A4561" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/5EC9376EE08D9FF62BD758A6DBEE145C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/6284F6A57FE9A8072F5E530A35A1D489" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/66878355129D7FD56BE13AF2D0D01562" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/7104F7C37F4BCD7D5DF4AE690D7A5150" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/723ECC541A5AF7D3D74755EC7E058BDC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/7E4E44859AA9511B6290FA31B827806F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/8C9728881507ACCF825119A66E56D91D" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/98ECD7009C7C881F73B7B2A45FC22812" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/9D0065A5DB13CD374C5DC82AEDE1D0A5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/ABE84AA613F1159C245ECBAE5DC0C996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/AC3F144E1E1C0CCD98790A52F9EA6E5B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/AFF88CA35449BC86E2388D6B6427B617" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/C64DA4E000820C7BBE2FF008748C0202" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/C76C8C491F82CC7CE1572BC53A0334FE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/CE296744E5A187D725124087F42359C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/CE3BA035D0891092523528C076221CDD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/D71B07F1807113D7680AC791E5202D7C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/D842DF8CD5386C0ADBC183BAFA676E76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/EF1789A645A3763E5B5F81FBD12A51EA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/F25067CB2893666043FA9F51E9BEC149" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/F2A9A197950A48C78B8BC7E1C4C51AAD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/FCB689D6FA9F214094D5C0FB49DF8FB4/F9A601117215FB7A711BB08A134655E6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/state.mpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/FileContentIndex/00eaf187-25de-430d-b9f2-ee7702d2c83b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/FileContentIndex/5d3b9505-b928-40ef-9566-c74dc627f937.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/FileContentIndex/8920a571-0345-426b-b781-3e6a7b78289a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/FileContentIndex/b20f4b53-2546-4bd5-a9d0-59559e6d820a.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/FileContentIndex/d7d55bd0-316e-4fc7-8052-181aabce503d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/copilot-chat/48084e99/sessions/73fe0409-080f-4c40-8ad7-deff441065e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion de Frank/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/FileContentIndex/3d1ad797-2f8b-4a5f-8a0c-dfb67a0650f0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/FileContentIndex/4c89d992-f10d-4ac9-bf4b-e07ed1266beb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/FileContentIndex/a80c4667-ba9d-4609-805f-de3ccb38bc8b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/FileContentIndex/b55d1d62-9602-435a-8deb-068c8934becd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/FileContentIndex/f8f5bbff-e4d8-437b-983e-033f2ba5d137.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/copilot-chat/48084e99/sessions/e10ed4de-38b3-4a54-bb94-a8886d3d8c3e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/Profundizacion-de-Frank/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/3d1ad797-2f8b-4a5f-8a0c-dfb67a0650f0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/4c89d992-f10d-4ac9-bf4b-e07ed1266beb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/a80c4667-ba9d-4609-805f-de3ccb38bc8b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/b55d1d62-9602-435a-8deb-068c8934becd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/f8f5bbff-e4d8-437b-983e-033f2ba5d137.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/copilot-chat/48084e99/sessions/d965bb64-03a1-4a66-a49c-60616c15f229" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/copilot-chat/48084e99/sessions/d965bb64-03a1-4a66-a49c-60616c15f229" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/OvejaGatewayImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/OvejaGatewayImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/0EFCA11D8D1615996076D00C5A46A39C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/104EB27BD600A3F392F83F655C83E362" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/134BD3AEA0332839E35F6BB64B458946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/245578F08045A3EBB7BEC2BBA6A27C47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/556D5A2E3CDD6EE9D3BC783F746CA023" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/644A4996B8CA455E72D5AACA89DF9DB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/6C17BA95CBDEF8AE7EFE0590E6048DE9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/80EA218C7229729130B6E01894BBC0C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/8F9071039D6701F6B344126DEA2D4100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/98DF5C5548235226FE5FDDB48B194C88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/A479BB2588A86E67BDC0A83C728BB0F7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/DC560EE554B95441C2D878C469AAA179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/0EFCA11D8D1615996076D00C5A46A39C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/134BD3AEA0332839E35F6BB64B458946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/245578F08045A3EBB7BEC2BBA6A27C47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/3E8A3C5E9D152E34ED72762C0D6777A6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/418D9D1556E1E835338BFC097E7C3D4C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/4C46E2966F070200F9E0EF1C574C901F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/52CB5075F5783605A5A2D62527CDDD4A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/585F0D107C7E33EF2B926D008DB929E7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/644A4996B8CA455E72D5AACA89DF9DB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/80EA218C7229729130B6E01894BBC0C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/859E05E33FF0FE90E66EABFC3C2A7C2B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/88A028F86784A820B276C918AFE8B213" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/8F9071039D6701F6B344126DEA2D4100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/A42BDFEE4F4C03773DE69B35D7D8666F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/BFA403F061D1B8AF1AA9C102AF7970F8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/DC560EE554B95441C2D878C469AAA179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/E320D56C4EE48C3B94F918066CC26D76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/EDB8C7003E355E285EF0C605BB9B18A0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/F9169C0795E882F02AA6F246D9540DE6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/150FF357C3FE0C2377A99CA7E9513EB2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/663EDB7F8269BCC5840DEE307912EAC3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/6BBCE8572850F522A5BCFB1E10C4BC49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/8F1778E252D3171B9D60AF1E29207E11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/901F7C76BAA0199F1E684FED543CC992" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/980FE7ECC32445EB4AC1D5F9F2C473D0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/AF2777B6D0DE31589C90BE680ADBB6EB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/0965DDDD01C03F3EC4B62960EBF4568C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/0EFCA11D8D1615996076D00C5A46A39C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/134BD3AEA0332839E35F6BB64B458946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/245578F08045A3EBB7BEC2BBA6A27C47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/46A8A1D0103592AA1E194070FC6CDA51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/523BCB2F893E799A81DC189F44225D51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/556D5A2E3CDD6EE9D3BC783F746CA023" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/644A4996B8CA455E72D5AACA89DF9DB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/80EA218C7229729130B6E01894BBC0C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/8F9071039D6701F6B344126DEA2D4100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/92C72A956C74182FE92D97E40728A88E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/DC560EE554B95441C2D878C469AAA179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/state.mpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/FileContentIndex/2e2010e4-7968-46ad-bbb5-994658463ce2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/FileContentIndex/6997d9eb-9f87-4009-b015-fad1a5a3ca29.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/FileContentIndex/70d244c9-d8e9-4d87-874c-1d6ab3064f42.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/FileContentIndex/8fa3f1ee-69d6-41de-a991-5203ea26669d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/FileContentIndex/a9b79a0b-2a08-49c1-8b9d-931dd71a4476.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/copilot-chat/48084e99/sessions/c398305d-57f9-4ee6-88bf-fdd1cf518095" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/v17/DocumentLayout.backup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ganadero-service/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/GanaderoServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/DomainValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/DomainValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/DuplicateEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/DuplicateEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/GanaderoNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/UsuarioNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/InvalidEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/InvalidEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/InvalidNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/InvalidNameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/InvalidPhoneException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/exception/InvalidPhoneException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/Ganadero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/model/gateway/GanaderoGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/domain/usecase/GanaderoUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructura/dto/GanaderoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructura/dto/GanaderoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructura/dto/GanaderoUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructura/entry_points/GanaderoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoDataJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/UsuarioDataJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/mapper/GanaderoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infrastructure/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sheep/infrastructure/entry_points/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/128278B35B01648032436957ECCEA81C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/28D9F1F4570DAD7A5C857ACD3C29EF37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/39924164CFA6665614D6D14969A507B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/585FAB0F7C1A7260355683C580973C70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/623130C0C93AE9AC1BF74DA6209B2EE1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/73B3C04D954730DE5D8F8C01953C32EF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/83BF0658035798DF6B7097E52F3ECF43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/9F7231A5FD20B7BBEE005242A4127366" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/C93E4A2A48A6306E728471AFAF72C2F9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/CBC9278F46CC223DD290C74648EA4322" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/E2B76C8A319E3495D13AD85E26FC3B8A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/1A1544099306444ABF87DED63C548CAE/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/128278B35B01648032436957ECCEA81C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/26239B669ED71458270C6F4FBBB5134F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/28D9F1F4570DAD7A5C857ACD3C29EF37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/39924164CFA6665614D6D14969A507B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/585FAB0F7C1A7260355683C580973C70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/C0310DE7A710C84BF1230C32CFEEFF30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/CE296744E5A187D725124087F42359C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/DB6557F89E80C223333ED0FF8D38E462" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/E2B76C8A319E3495D13AD85E26FC3B8A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/5EC01960F3477D44A468F7ADB9F24AD8/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/6A57D4718BB34F48824EC3964AAD3A99/1550839E88B0E473D5A67C85C9DDD2AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/6A57D4718BB34F48824EC3964AAD3A99/4A1FEC5066D6ED08EE2751E3D87CF4A3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/6A57D4718BB34F48824EC3964AAD3A99/92A37A3AA74267B077B14748916A97F4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/6A57D4718BB34F48824EC3964AAD3A99/A05D80FED62DA7714ACCFDFB6B6B20EE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/6A57D4718BB34F48824EC3964AAD3A99/E2B76C8A319E3495D13AD85E26FC3B8A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/0ED69FC8D81F197C36FEA6F731484D84" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/128278B35B01648032436957ECCEA81C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/1DBA970E7D83EAFC337137C23D0B1D76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/26239B669ED71458270C6F4FBBB5134F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/28D9F1F4570DAD7A5C857ACD3C29EF37" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/39924164CFA6665614D6D14969A507B3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/3D562192E697649C1C4D6C60EF93F3F6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/3EC8137E3B2DAC93BCF21439CACA118A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/585FAB0F7C1A7260355683C580973C70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/74ACE4EEA207A2446B28BD0EEEC53D7A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/94DA409BFE5F9D1B1788C6CB7B775132" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/CE296744E5A187D725124087F42359C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/D4A0BCC261B632AB503EA1E8DFEC67C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/E2B76C8A319E3495D13AD85E26FC3B8A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/739D29022F043243A4665CB06F9637E3/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/128278B35B01648032436957ECCEA81C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/585FAB0F7C1A7260355683C580973C70" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/5D1DF93B2E7D5D229B7921F297854347" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/5D6E4B664E832A5793AEE9521AA341A5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/74BF075C8DD98F246D56BFD6276EF9C9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/778EDFAC3ECD8E7CF9C2BA8B07F41888" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/8323529DE5F2D7136D3E50735658F75B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/8D2570270025A3198C177707F3956F19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/98BA69BC1E53E3B851C7A70673A63920" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/D43432EDC6B80937A5DE6764C4B2CF54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/D9A383FAC560BF0C0127FFC1063E1B30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/E2B76C8A319E3495D13AD85E26FC3B8A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/E3E74A0200CE3F85F47BC8C5801E7C87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/BECA6B23AFF9CD42B4135D528E567F02/ECF3E00AD0C086A260C0C32936AAE83E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/CopilotSnapshots/64BB65D9A103664AA49C60616C15F229/state.mpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/FileContentIndex/67295492-6b1c-457c-87d3-b50d53221733.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/FileContentIndex/b9d87372-c35f-45ac-b37a-41a64209d314.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/FileContentIndex/dff260ce-8425-4a48-beaa-2d24d43b70b2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/FileContentIndex/e0f996e7-f9d3-4604-b794-2f1db4e9339b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/copilot-chat/48084e99/sessions/d965bb64-03a1-4a66-a49c-60616c15f229" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/Sheep/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/SheepApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/exception/DomainValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/exception/IdentificacionDuplicadaException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/exception/OvejaNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/exception/PropietarioNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/model/Oveja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/model/gateway/GanaderoClientGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/model/gateway/OvejaGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/domain/usecase/OvejaUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/client/GanaderoClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/OvejaData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/OvejaDataJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/OvejaGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/UsuarioData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/UsuarioDataJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/entry_points/OvejaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/entry_points/dto/OvejaRequestDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/entry_points/dto/OvejaResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/entry_points/dto/OvejasPorGanaderoResponseDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infraestructure/mapper/OvejaMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infrastructure/config/RestClientConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infrastructure/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/java/com/example/Sheep/infrastructure/entry_points/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sheep/src/test/java/com/example/Sheep/SheepApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/0EFCA11D8D1615996076D00C5A46A39C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/104EB27BD600A3F392F83F655C83E362" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/134BD3AEA0332839E35F6BB64B458946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/245578F08045A3EBB7BEC2BBA6A27C47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/556D5A2E3CDD6EE9D3BC783F746CA023" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/644A4996B8CA455E72D5AACA89DF9DB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/6C17BA95CBDEF8AE7EFE0590E6048DE9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/80EA218C7229729130B6E01894BBC0C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/8F9071039D6701F6B344126DEA2D4100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/98DF5C5548235226FE5FDDB48B194C88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/A479BB2588A86E67BDC0A83C728BB0F7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/3C8B93D02BF11341A3394CBAA2D88E98/DC560EE554B95441C2D878C469AAA179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/0EFCA11D8D1615996076D00C5A46A39C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/134BD3AEA0332839E35F6BB64B458946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/245578F08045A3EBB7BEC2BBA6A27C47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/3E8A3C5E9D152E34ED72762C0D6777A6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/418D9D1556E1E835338BFC097E7C3D4C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/4C46E2966F070200F9E0EF1C574C901F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/52CB5075F5783605A5A2D62527CDDD4A" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/585F0D107C7E33EF2B926D008DB929E7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/644A4996B8CA455E72D5AACA89DF9DB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/80EA218C7229729130B6E01894BBC0C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/859E05E33FF0FE90E66EABFC3C2A7C2B" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/88A028F86784A820B276C918AFE8B213" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/8F9071039D6701F6B344126DEA2D4100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/A42BDFEE4F4C03773DE69B35D7D8666F" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/BFA403F061D1B8AF1AA9C102AF7970F8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/DC560EE554B95441C2D878C469AAA179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/E320D56C4EE48C3B94F918066CC26D76" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/EDB8C7003E355E285EF0C605BB9B18A0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/4F7D998D7AC8D34DB7F20D96D4B37B09/F9169C0795E882F02AA6F246D9540DE6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/150FF357C3FE0C2377A99CA7E9513EB2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/663EDB7F8269BCC5840DEE307912EAC3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/6BBCE8572850F522A5BCFB1E10C4BC49" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/8F1778E252D3171B9D60AF1E29207E11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/901F7C76BAA0199F1E684FED543CC992" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/980FE7ECC32445EB4AC1D5F9F2C473D0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/AF2777B6D0DE31589C90BE680ADBB6EB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/0965DDDD01C03F3EC4B62960EBF4568C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/0EFCA11D8D1615996076D00C5A46A39C" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/134BD3AEA0332839E35F6BB64B458946" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/245578F08045A3EBB7BEC2BBA6A27C47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/46A8A1D0103592AA1E194070FC6CDA51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/523BCB2F893E799A81DC189F44225D51" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/556D5A2E3CDD6EE9D3BC783F746CA023" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/564CE387F3B9B7C3DD91B9E240AD6286" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/644A4996B8CA455E72D5AACA89DF9DB3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/6F5036AD1D617A9E651769C47BEBCF12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/7B41EC30BA7D4F40426B5790FC1B7EF1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/80A3B5F15419181E3FC6AAAEB663E69E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/80EA218C7229729130B6E01894BBC0C5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/8F9071039D6701F6B344126DEA2D4100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/92C72A956C74182FE92D97E40728A88E" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/AAB4DF61D75366AFBAE530788CA04D61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/F431C9AD1713584D8BD63444A94DB5D0/DC560EE554B95441C2D878C469AAA179" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/state.mpack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ProjectSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/FileContentIndex/2e2010e4-7968-46ad-bbb5-994658463ce2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/FileContentIndex/6997d9eb-9f87-4009-b015-fad1a5a3ca29.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/FileContentIndex/70d244c9-d8e9-4d87-874c-1d6ab3064f42.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/FileContentIndex/8fa3f1ee-69d6-41de-a991-5203ea26669d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/FileContentIndex/a9b79a0b-2a08-49c1-8b9d-931dd71a4476.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/copilot-chat/48084e99/sessions/c398305d-57f9-4ee6-88bf-fdd1cf518095" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/v17/.wsuo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/v17/DocumentLayout.backup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/ganadero-service/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/GanaderoServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/exception/DomainValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/exception/DuplicateEmailException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/exception/GanaderoNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidEmailException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidNameException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidPhoneException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/model/Ganadero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/model/gateway/GanaderoGateway.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/domain/usecase/GanaderoUseCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructura/dto/GanaderoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructura/dto/GanaderoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructura/dto/GanaderoUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructura/entry_points/GanaderoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoDataJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoGatewayImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infraestructure/mapper/GanaderoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infrastructure/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/java/com/example/sheep/infrastructure/entry_points/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ganadero-service/src/main/resources/application.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/example/sheep/infraestructure/notification/NotificacionGatewayImpl.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="35anIKbcBBReGNn2bk1M4Bx2qwb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GanadeoServiceApplication.executor": "Debug",
+    "Application.GanaderoServiceApplication.executor": "Run",
+    "Application.UsuarioApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jseba/source/repos/Profundizacion-de-Frank/ganadero-service"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.sheep.infraestructure.message_broker" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jseba\source\repos\Profundizacion-de-Frank\ganadero-service" />
+      <recent name="C:\Users\jseba\source\repos\Profundizacion-de-Frank\ganadero-service\target" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.sheep" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UsuarioApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.sheep.UsuarioApplication" />
+      <module name="ganadero-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.sheep.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UsuarioApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="145e605a-94e0-457f-aff1-23f5c57624fe" name="Changes" comment="" />
+      <created>1763356971827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763356971827</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ganadero_service$GanaderoServiceApplication.ic" NAME="GanaderoServiceApplication Coverage Results" MODIFIED="1763751991712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.sheep.*</FILTER>
+    </SUITE>
+  </component>
+</project>
