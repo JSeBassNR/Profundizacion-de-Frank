@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="42f201e4-d556-4573-acde-e28829fbb2a1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/GanadeoServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/application/config/UseCaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/model/Notificacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/dto/GanaderoRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/dto/GanaderoUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/message_broker/NotificationGateway.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/message_broker/dto/EventoNotificacionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/state.mpack" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/CopilotSnapshots/DED40EE1B338544ABB94A8886D3D8C3E/state.mpack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/CopilotIndices/17.14.1368.60722/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/3d1ad797-2f8b-4a5f-8a0c-dfb67a0650f0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/4c89d992-f10d-4ac9-bf4b-e07ed1266beb.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/a80c4667-ba9d-4609-805f-de3ccb38bc8b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/b55d1d62-9602-435a-8deb-068c8934becd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/FileContentIndex/f8f5bbff-e4d8-437b-983e-033f2ba5d137.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/copilot-chat/48084e99/sessions/e10ed4de-38b3-4a54-bb94-a8886d3d8c3e" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/copilot-chat/48084e99/sessions/e10ed4de-38b3-4a54-bb94-a8886d3d8c3e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/Profundizacion-de-Frank/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/FileContentIndex/dff260ce-8425-4a48-beaa-2d24d43b70b2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/copilot-chat/48084e99/sessions/d965bb64-03a1-4a66-a49c-60616c15f229" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/copilot-chat/48084e99/sessions/d965bb64-03a1-4a66-a49c-60616c15f229" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/Sheep/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/domain/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/UsuarioData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/src/main/java/com/example/Sheep/infraestructure/drive_adapters/jpa_repository/UsuarioDataJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sheep/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Sheep/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/150FF357C3FE0C2377A99CA7E9513EB2" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/150FF357C3FE0C2377A99CA7E9513EB2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/6BBCE8572850F522A5BCFB1E10C4BC49" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/CopilotSnapshots/5D3098C3F957E64E88BFFDD1CF518095/A012518DEFD1C447BE763499C1B1C1DB/6BBCE8572850F522A5BCFB1E10C4BC49" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/CopilotIndices/17.14.1368.60722/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/FileContentIndex/2e2010e4-7968-46ad-bbb5-994658463ce2.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/FileContentIndex/6997d9eb-9f87-4009-b015-fad1a5a3ca29.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/FileContentIndex/70d244c9-d8e9-4d87-874c-1d6ab3064f42.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/FileContentIndex/8fa3f1ee-69d6-41de-a991-5203ea26669d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/FileContentIndex/a9b79a0b-2a08-49c1-8b9d-931dd71a4476.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/copilot-chat/48084e99/sessions/c398305d-57f9-4ee6-88bf-fdd1cf518095" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/v17/.wsuo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/ganadero-service/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/GanaderoServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/DomainValidationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/DomainValidationException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/DuplicateEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/DuplicateEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidNameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidPhoneException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/exception/InvalidPhoneException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/model/Ganadero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/model/Ganadero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/usecase/GanaderoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/domain/usecase/GanaderoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructura/dto/GanaderoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructura/dto/GanaderoResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/dto/GanaderoResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructura/dto/GanaderoUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructura/entry_points/GanaderoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/entry_points/GanaderoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/driver_adapters/jpa_repository/GanaderoData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/mapper/GanaderoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infraestructure/mapper/GanaderoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infrastructure/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/java/com/example/sheep/infrastructure/entry_points/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ganadero-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ganadero-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="35j3yahBdB3hHoBpF1p0mlxBXAH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.NotificacionApplication.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "julianmcruz/cambios",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/NiTRO/Documents/Profundizacion de Frank/Profundizacion-de-Frank/Notificacion"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42f201e4-d556-4573-acde-e28829fbb2a1" name="Changes" comment="" />
+      <created>1763609908906</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763609908906</updated>
+    </task>
+    <servers />
+  </component>
+</project>

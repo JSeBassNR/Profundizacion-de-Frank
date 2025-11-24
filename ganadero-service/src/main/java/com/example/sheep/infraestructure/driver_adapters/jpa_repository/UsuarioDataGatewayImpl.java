@@ -83,4 +83,3 @@ public class UsuarioDataGatewayImpl implements UsuarioGateway {
         return repository.findAll(pageable).map(usuarioData -> mapperUsuario.toUsuario(usuarioData));
     }
 }
-

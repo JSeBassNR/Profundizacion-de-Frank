@@ -1,13 +1,12 @@
 package com.example.Sheep.domain.model;
 
+import com.example.Sheep.domain.exception.DomainValidationException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-
-import com.example.Sheep.domain.exception.DomainValidationException;
 
 /**
  * Entidad de dominio (Aggregate Root) que representa una oveja.
@@ -22,19 +21,24 @@ import com.example.Sheep.domain.exception.DomainValidationException;
 @Setter
 @Getter
 public class Oveja {
- // Identificador único interno
- private Long idOveja;
- // Código o chapa de la oveja (único en el corral)
- private String identificacion;
- private String raza;
- private Integer edad; // en años
- // Sexo: TRUE = hembra, FALSE = macho (según BD)
- private Boolean sexo;
- // Estado de salud: libre
- private String estadoSalud;
- private LocalDateTime fechaRegistro;
- // Identificador del ganadero (microservicio externo)
- private Long ganaderoId;
+    // Identificador único interno
+    private Long id;
+    private Long productorId;
+    // Código o chapa de la oveja (único en el corral)
+    private String identificacion;
+    private Integer edad; // en años
+    // Sexo: TRUE = hembra, FALSE = macho (según BD)
+    private Boolean sexo;
+    // Estado de salud: libre
+    private String estadoSalud;
+    private LocalDateTime fechaRegistro;
+
+    // Resultado del modelo entrenado (por ejemplo: 'Sano', 'Enfermo', etc.)
+    private String resultadoML;
+
+    // Ruta de la imagen asociada a la oveja (en el sistema de archivos)
+    private String imagenPath;
+
 
  /**
  * Reglas de validación de la entidad.

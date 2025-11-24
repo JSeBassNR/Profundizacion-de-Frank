@@ -6,6 +6,10 @@ import com.example.sheep.domain.usecase.UsuarioUseCase;
 import com.example.sheep.infraestructure.driver_adapters.jpa_repository.UsuarioData;
 import com.example.sheep.infraestructure.mapper.MapperUsuario;
 import com.example.sheep.infraestructure.dto.AnalisisNotificacionRequest;
+import com.example.sheep.domain.usecase.AnalisisUseCase;
+import com.example.sheep.infraestructure.mapper.MapperAnalisis;
+import com.example.sheep.infraestructure.dto.AnalisisResponse;
+import com.example.sheep.infraestructure.driver_adapters.jpa_repository.AnalisisData;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -22,9 +26,44 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/MachIA/usuario")
 @RequiredArgsConstructor
 public class UsuarioController {
+    @GetMapping("/{id}/ovejas/count")
+    public ResponseEntity<Long> getOvejaCount(@PathVariable Long id) {
+        // Llamada HTTP a Sheep para obtener el conteo
+        try {
+            java.net.URL url = new java.net.URL("http://localhost:9191/api/MachIA/ovejas/productor/" + id + "/count");
+            java.net.HttpURLConnection con = (java.net.HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+            con.setConnectTimeout(3000);
+            con.setReadTimeout(3000);
+            int status = con.getResponseCode();
+            if (status == 200) {
+                try (java.io.BufferedReader in = new java.io.BufferedReader(new java.io.InputStreamReader(con.getInputStream()))) {
+                    String inputLine;
+                    StringBuilder content = new StringBuilder();
+                    while ((inputLine = in.readLine()) != null) {
+                        content.append(inputLine);
+                    }
+                    long count = Long.parseLong(content.toString());
+                    return ResponseEntity.ok(count);
+                }
+            } else {
+                return ResponseEntity.status(status).body(-1L);
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body(-1L);
+        }
+    }
 
     private final UsuarioUseCase usuarioUseCase;
     private final MapperUsuario mapperUsuario;
+    private final AnalisisUseCase analisisUseCase;
+    private final MapperAnalisis mapperAnalisis;
+    @GetMapping("/{id}/analisis")
+    public ResponseEntity<?> getAnalisisByUsuario(@PathVariable Long id) {
+        var analisisList = analisisUseCase.obtenerPorUsuario(id);
+        var responseList = analisisList.stream().map(mapperAnalisis::toResponse).toList();
+        return ResponseEntity.ok(responseList);
+    }
 
     @PostMapping("/save")
     public ResponseEntity<UsuarioResponse> saveUsuario(@RequestBody UsuarioData usuarioData){
@@ -41,24 +80,13 @@ public class UsuarioController {
     @GetMapping("/{id}")
     public ResponseEntity<UsuarioResponse> findByIdUsuario(@PathVariable Long id){
         Usuario usuarioValidadoEncontrado = usuarioUseCase.buscarPorIdUsuario(id);
-
         if(usuarioValidadoEncontrado.getId() == null){
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         }
-
-        // Authorization: allow ADMIN or the owner (matching principal username == email)
-        var auth = org.springframework.security.core.context.SecurityContextHolder.getContext().getAuthentication();
-        boolean isAdmin = auth.getAuthorities().stream().anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
-        String principalName = auth.getName();
-
-        if(!isAdmin && (principalName == null || !principalName.equalsIgnoreCase(usuarioValidadoEncontrado.getEmail()))){
-            return new ResponseEntity<>(null, HttpStatus.FORBIDDEN);
-        }
-
         return new ResponseEntity<>(mapperUsuario.toResponse(usuarioValidadoEncontrado), HttpStatus.OK);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/detele/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> deleteById(@PathVariable Long id){
         try{
@@ -109,10 +137,17 @@ public class UsuarioController {
     @PreAuthorize("hasAnyRole('VETERINARIO','ADMIN')")
     public ResponseEntity<Void> notificarAnalisis(@PathVariable Long id, @Valid @RequestBody AnalisisNotificacionRequest body){
         usuarioUseCase.notificarAnalisisListo(id, body.getReferencia());
+        // Guardar el análisis en la base de datos
+        var analisis = AnalisisData.builder()
+            .usuarioId(id)
+            .referencia(body.getReferencia())
+            .resultado(body.getResultado())
+            .fecha(java.time.LocalDateTime.now())
+            .build();
+        analisisUseCase.guardarAnalisis(analisis);
         return ResponseEntity.accepted().build();
     }
 }
-
 
 
 

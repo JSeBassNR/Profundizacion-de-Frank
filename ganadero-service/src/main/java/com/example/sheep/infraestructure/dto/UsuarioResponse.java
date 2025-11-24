@@ -22,4 +22,3 @@ public class UsuarioResponse {
  private LocalDateTime fechaRegistro;
  private String ubicacion;
 }
-

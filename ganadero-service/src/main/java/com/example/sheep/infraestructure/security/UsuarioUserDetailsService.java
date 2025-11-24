@@ -40,4 +40,3 @@ public class UsuarioUserDetailsService implements UserDetailsService {
         }
     }
 }
-

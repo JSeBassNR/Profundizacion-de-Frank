@@ -9,8 +9,9 @@ import lombok.Data;
  */
 @Data
 public class AnalisisNotificacionRequest {
- @NotBlank
- @Size(max =100)
- private String referencia; // identificador o c�digo del an�lisis
-}
+	@NotBlank
+	@Size(max = 100)
+	private String referencia; // identificador o código del análisis
 
+	private String resultado; // resultado del análisis (opcional)
+}

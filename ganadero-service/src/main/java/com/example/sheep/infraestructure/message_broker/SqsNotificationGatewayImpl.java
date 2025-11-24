@@ -1,6 +1,7 @@
 package com.example.sheep.infraestructure.message_broker;
 
 import com.example.sheep.domain.model.Notificacion;
+import com.example.sheep.domain.model.gateway.NotificacionGateway;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -10,12 +11,12 @@ import software.amazon.awssdk.services.sqs.model.SendMessageRequest;
 
 @Component
 @RequiredArgsConstructor
-public class SqsNotificationGatewayImpl implements NotificationGateway {
+public class SqsNotificationGatewayImpl implements NotificacionGateway {
 
     private final SqsClient sqsClient;
     private final ObjectMapper objectMapper;
 
-    private final String queueUrl = "URL-COLA"; // actualiza
+    private final String queueUrl = "https://sqs.us-east-1.amazonaws.com/577638352484/notificaciones_user"; // actualiza
 
     @Override
     public void enviarMensaje(Notificacion mensajeCola) {
@@ -34,4 +35,3 @@ public class SqsNotificationGatewayImpl implements NotificationGateway {
         }
     }
 }
-

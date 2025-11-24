@@ -13,4 +13,3 @@ public class Notificacion {
     private String numeroTelefono;
     private String mensaje;
 }
-

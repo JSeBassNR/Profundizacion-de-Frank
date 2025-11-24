@@ -29,8 +29,9 @@ public class SecurityConfig {
         http
                 .csrf().disable()
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/MachIA/usuario/save", "/api/MachIA/usuario/login").permitAll()
-                        .anyRequest().authenticated()
+                    .requestMatchers("/api/MachIA/usuario/save", "/api/MachIA/usuario/login").permitAll()
+                    .requestMatchers(org.springframework.http.HttpMethod.GET, "/api/MachIA/usuario/*").permitAll()
+                    .anyRequest().authenticated()
                 )
                 .httpBasic()
                 .and()
@@ -42,4 +43,3 @@ public class SecurityConfig {
 
 
 }
-

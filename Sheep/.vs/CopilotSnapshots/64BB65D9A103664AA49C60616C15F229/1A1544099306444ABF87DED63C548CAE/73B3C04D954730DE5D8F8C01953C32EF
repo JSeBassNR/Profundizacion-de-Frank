@@ -4,7 +4,7 @@ import com.example.Sheep.domain.model.Oveja;
 import com.example.Sheep.domain.usecase.OvejaUseCase;
 import com.example.Sheep.infraestructure.entry_points.dto.OvejaRequestDTO;
 import com.example.Sheep.infraestructure.entry_points.dto.OvejaResponseDTO;
-import com.example.Sheep.infraestructure.mapper.OvejaMapper;
+import com.example.Sheep.infraestructure.mapper.MapperOveja;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -19,7 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/ovejas")
 @RequiredArgsConstructor
-public class OvejaController {
+public class ovejaController {
  private final OvejaUseCase useCase;
  private final OvejaMapper mapper;
 

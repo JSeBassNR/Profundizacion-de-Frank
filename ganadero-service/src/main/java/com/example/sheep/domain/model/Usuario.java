@@ -71,4 +71,3 @@ public class Usuario {
  return this;
  }
 }
-

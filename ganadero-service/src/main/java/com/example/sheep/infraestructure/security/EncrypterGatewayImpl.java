@@ -19,4 +19,3 @@ public class EncrypterGatewayImpl implements EncrypterGateway {
         return encoder.matches(passUser, passBD);
     }
 }
-

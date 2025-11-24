@@ -5,11 +5,15 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface OvejaGateway {
- Oveja guardar(Oveja oveja);
- Oveja buscarPorId(Long id);
- Oveja actualizar(Oveja oveja);
- void eliminar(Long id);
+	long countByProductor(Long productorId);
+ Oveja guardarOveja(Oveja oveja);
+ Oveja buscarPorIdOveja(Long id);
+ Oveja actualizarOveja(Oveja oveja);
+ void eliminarPorID(Long id);
  Oveja buscarPorIdentificacion(String identificacion);
  Page<Oveja> obtenerPaginado(Pageable pageable);
- Page<Oveja> obtenerPorGanadero(Long ganaderoId, Pageable pageable);
+ Page<Oveja> obtenerPorProductor(Long productorId, Pageable pageable);
+ 
+ // Actualiza en lote el `productorId` para una lista de oveja ids.
+ int asignarProductorAIds(Long productorId, java.util.List<Long> ids);
 }

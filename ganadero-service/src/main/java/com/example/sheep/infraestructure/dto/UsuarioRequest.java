@@ -9,10 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Request para crear un usuario del servicio de autenticación.
- * Alineado con el modelo Usuario del microservicio Sheep.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -35,4 +31,3 @@ public class UsuarioRequest {
  // Campo opcional adicional
  private String ubicacion;
 }
-
